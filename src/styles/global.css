@@ -45,19 +45,31 @@
 .prose hr { clear: both; }
 
 @media (min-width: 768px) {
-  .prose p:has(> img[data-orientation="portrait"]),
-  .prose p:has(> a > img[data-orientation="portrait"]) {
+  /* Direct-child selector: <figure>-wrapped images opt out of float automatically. */
+  .prose > p:has(> img[data-orientation="portrait"]),
+  .prose > p:has(> a > img[data-orientation="portrait"]) {
     float: right;
-    width: 42%;
-    max-width: 320px;
+    width: 40%;
+    max-width: 280px;
     margin: 0.4em 0 1.25em 1.75em;
     clear: right;
   }
-  .prose p:has(> img[data-orientation="portrait"]) img,
-  .prose p:has(> a > img[data-orientation="portrait"]) img {
+  .prose > p:has(> img[data-orientation="portrait"]) img,
+  .prose > p:has(> a > img[data-orientation="portrait"]) img {
     width: 100%;
     max-height: none;
     margin: 0;
+  }
+  /* <figure>-wrapped images are full-width centered hero shots (used for end-of-post closes). */
+  .prose figure {
+    margin: 2em auto;
+    text-align: center;
+  }
+  .prose figure img {
+    margin: 0 auto;
+    max-height: 75vh;
+    max-width: 100%;
+    width: auto;
   }
 }
 

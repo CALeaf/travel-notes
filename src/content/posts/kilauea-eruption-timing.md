@@ -49,21 +49,19 @@ USGS publishes a [YouTube live feed](https://youtube.com/@usgs/streams) of the a
 
 ## 4. The signs that something is about to happen
 
+![A sustained lava fountain at Kīlauea — the signal that means it's time to drive in](../../assets/notes/kilauea-eruption-timing/eruption-day.jpg)
+
 Once tilt is approaching the previous eruption's peak **and** the live feed is glowing strongly, raise your check frequency. Watch real-time tilt: rising means closer; falling means the date is slipping. The visible sequence we watched in the live feed, in order of urgency:
 
 1. **Occasional lava splashes or brief overflows.** Getting close. Not yet. Don't drive in.
 2. **Sustained lava fountaining** — fountains that don't retract back below the rim. This is the start.
 3. **Fountain height increasing + real-time tilt dropping rapidly.** It's happening. Leave now.
 
-![A sustained lava fountain at Kīlauea — the signal that means it's time to drive in](../../assets/notes/kilauea-eruption-timing/eruption-day.jpg)
-
 We made the call on signal #3.
 
 ## 5. The viewing spot
 
 Navigate to **Devastation Trail** and follow the crowd. Of the spots people gather at, **D point** had the best view of the active fountains.
-
-![Silhouetted figure in front of the Episode 42 lava fountains at D point](../../assets/notes/kilauea-eruption-timing/silhouette.jpg)
 
 ## 6. Resources
 
@@ -79,4 +77,11 @@ Official USGS pages I checked regularly:
 One non-USGS tool:
 
 - **Volcano Call App** — phones your number when an eruption starts. The reason to install this is the 3am case: lava begins at night, you sleep through, your trip ends, you missed it. With the app, you wake up.
+
+<figure>
+
+![Silhouetted figure in front of the Episode 42 lava fountains at D point](../../assets/notes/kilauea-eruption-timing/silhouette.jpg)
+
+</figure>
+
 Mahalo to Pele for granting permission. The data tells you where to be; the timing is hers.
