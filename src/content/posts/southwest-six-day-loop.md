@@ -6,6 +6,12 @@ city: American Southwest
 tags: [road-trip, vegas, zion, bryce-canyon, page, monument-valley, grand-canyon]
 excerpt: "Vegas, Zion, Bryce, Page, Monument Valley, and the Grand Canyon in a tight six-day loop. Where to spend your time and money — and where not to."
 cover: ../../assets/notes/southwest-six-day-loop/cover.png
+gallery:
+  - ../../assets/notes/southwest-six-day-loop/zion.jpg
+  - ../../assets/notes/southwest-six-day-loop/bryce.jpg
+  - ../../assets/notes/southwest-six-day-loop/page.jpg
+  - ../../assets/notes/southwest-six-day-loop/monument-valley.jpg
+  - ../../assets/notes/southwest-six-day-loop/vegas.jpg
 ---
 
 I drove the American Southwest classic loop from April 30 to May 5, 2026: Vegas → Zion → Bryce → Page → Monument Valley → Grand Canyon → Vegas. Roughly 2,100 miles round trip from the Bay Area, six days, five parks. It worked, but it was tight. If you can stretch to seven or eight, do it. Six leaves you driving into hotel parking lots after dark too often, which is the wrong way to see Monument Valley or Bryce.
@@ -29,7 +35,6 @@ Skipping Day 1 by flying into Vegas direct buys you an extra real day at the par
 
 **Driving.** A regular sedan handled the standard loop without issue — we did all 2,100 miles in a Mazda 3, and the only unpaved stretch we hit was the short parking yard at the Antelope Canyon tour staging area.
 
-![Looking down Zion Canyon from the Canyon Overlook Trail terminus](../../assets/notes/southwest-six-day-loop/zion.jpg)
 
 ## Zion in five hours (the realistic version on a tight schedule)
 
@@ -48,7 +53,6 @@ You don't need a full day. The single best decision at Bryce is to walk **Navajo
 
 For the rest of the park, the easiest approach is to drive between the rim viewpoints with the park map in hand. The signed pull-offs (Sunrise Point, Sunset Point, Inspiration Point, Bryce Point) are all close together and broadly similar in what they show — pick one or two for photos and don't feel pressure to hit every named overlook.
 
-![Hoodoos at Bryce Canyon from the rim](../../assets/notes/southwest-six-day-loop/bryce.jpg)
 
 ## Page in one day
 
@@ -59,7 +63,6 @@ Page has three claims to fame and you can do all three in a single day if you go
 3. **Horseshoe Bend** at midday. Yes, the light is flat — but the red rock background carries it, and you avoid the sunset crowds.
 4. **Lower Antelope Canyon** in the early afternoon. Book Dixie's at the **1:15pm slot** (they let me reschedule the day before for free, which is unusual for peak season).
 
-![Light filtering through Lower Antelope Canyon](../../assets/notes/southwest-six-day-loop/page.jpg)
 
 **Horseshoe Bend without standing on the edge**: most photos you see are taken from the unfenced rim. There's a safer setup that gives you a clean composition with the river behind. Just left of the safety railing, there's a chunky rock with a flat platform below it. Photographer climbs the rock; subject stands on the platform. You don't get the entire bend in frame — that's the only thing you give up.
 
@@ -72,7 +75,6 @@ The two best free vantage points are at opposite ends of the day:
 - **Sunset at the visitor center.** The Tribal Park visitor center balcony looks straight out at the Mittens. Show up 30 minutes before sundown for a parking spot. No hike required.
 - **Sunrise at Forrest Gump Point.** The famous straight-stretch shot on US-163, about 15 miles north of the visitor center. The light at sunrise is much better than at midday — and the road is empty.
 
-![The Mittens at sunset, from the Tribal Park visitor center](../../assets/notes/southwest-six-day-loop/monument-valley.jpg)
 
 There's also a **Valley Drive scenic loop** that goes down into the park for a closer look at the formations, but it's a dirt road that needs high clearance or 4WD — we didn't have the right vehicle for it, so I can't speak to the experience.
 
@@ -92,7 +94,6 @@ Six nights, six hotels. Three calls actually matter:
 
 **Lake Powell Resort** has the lake-view morning you'd hope for, and walls thin enough to hear next-door's conversation. Bring earplugs.
 
-![The Strip at night from the Cosmopolitan: Bellagio fountains, Eiffel Tower, Sphere, and the High Roller in one frame](../../assets/notes/southwest-six-day-loop/vegas.jpg)
 
 **The Cosmopolitan — book a City View 2 Bedroom Suite.** This is the Vegas room I'd plan a future trip around. Two bedrooms, three bathrooms, somewhere around 200 square meters, and a master window that frames the Sphere, the Bellagio fountains, the Eiffel Tower replica, and the High Roller wheel all at once. You can watch the Bellagio fountain show from bed. If you're going to splurge on one Strip hotel, this is the room category to look at.
 

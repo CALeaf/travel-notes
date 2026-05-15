@@ -6,6 +6,10 @@ city: Big Island
 tags: [honeymoon, kona, hilo, volcanoes-np, snorkeling, mauna-kea]
 excerpt: "A Kona–Hilo loop with manta rays, sea turtles, a Mauna Kea sunset, and — if you time it right — an actual eruption at Volcanoes National Park."
 cover: ../../assets/notes/hawaii-big-island-week/cover.jpg
+gallery:
+  - ../../assets/notes/hawaii-big-island-week/hilina-pali.jpg
+  - ../../assets/notes/hawaii-big-island-week/mauna-kea-sunset.jpg
+  - ../../assets/notes/hawaii-big-island-week/north-coast.jpg
 ---
 
 We went to the Big Island for our honeymoon expecting Hawaii to be expensive. It wasn't, really — we stayed in Airbnbs instead of resort hotels, and most of what we actually did (snorkeling, hiking, beach time) was free. The trip we'd planned was a circular drive: fly into Kona, work our way to the volcanoes side, end on Hilo's rainier east coast, then come back. What we didn't plan was that on Day 6, **the volcano actually erupted**, and we ended up at Volcanoes National Park at night watching lava in person. That part is not transferable. The rest of the route is.
@@ -49,13 +53,9 @@ For the **manta ray night dive**, we went with **Iruka**. Non-swimmers can do th
 
 ## The volcano and Mauna Kea
 
-![Oxidized brown pahoehoe lava along Hilina Pali Road — a foot for scale](../../assets/notes/hawaii-big-island-week/hilina-pali.jpg)
-
 On Day 4 we did the main loop at Hawaii Volcanoes National Park. Day 5 we came back through the park's quieter side roads, including **Hilina Pali Road** to the overlook. It's about two hours round trip from the main caldera area. The road is narrow enough that you sometimes have to pull onto the shoulder to let oncoming cars pass, and the wind at the overlook is real. But the payoff is a lava field old enough to have oxidized from black to brown — a color you won't see elsewhere in the park. We passed maybe five cars in those two hours. Lizards on the rocks.
 
 Day 6 was the eruption night. We drove back in after sundown to see the lava.
-
-![Mauna Kea summit at sunset — single observatory dome silhouetted against pink sky above the cloud layer](../../assets/notes/hawaii-big-island-week/mauna-kea-sunset.jpg)
 
 For Mauna Kea, we went up to the summit at sunset. The observatory area sits above the cloud layer. Check **mountain-forecast.com** for the summit before driving up — cloud sea is a weather lottery, and in the rainier months you can spend two hours on the road for nothing.
 
@@ -67,10 +67,6 @@ Hilo is rainier and slower than Kona. **Pineapples Island Fresh Cuisine** for lu
 
 We slept in Kona for most nights, with a few in the volcano village in between.
 
-<figure>
 
-![North Kohala coast on the Day 7 drive — Pololu Valley vantage](../../assets/notes/hawaii-big-island-week/north-coast.jpg)
-
-</figure>
 
 Mahalo to Pele for the eruption — that wasn't on the itinerary and it made the trip.

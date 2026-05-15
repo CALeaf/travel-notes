@@ -3,6 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import { Image, getImage } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
+import Gallery from '../../components/Gallery.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => !data.draft);
@@ -15,9 +16,12 @@ interface Props {
 
 const { post } = Astro.props;
 const { Content, headings, remarkPluginFrontmatter } = await post.render();
-const { title, city, country, date, excerpt, cover, tags } = post.data;
+const { title, city, country, date, excerpt, cover, gallery, tags } = post.data;
 const dateStr = date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 const readingMinutes = Math.max(1, Math.round((remarkPluginFrontmatter?.minutesRead ?? 4)));
+
+// Gallery sequence: cover is always first; additional images follow.
+const galleryImages = [cover, ...(gallery || [])];
 
 // Resolve the cover to an absolute URL for OpenGraph / Twitter cards
 const ogCoverImg = await getImage({ src: cover, width: 1200, format: 'jpeg' });
@@ -64,16 +68,10 @@ const more = all
       <p class="mt-6 text-lg text-muted italic font-serif max-w-2xl mx-auto">{excerpt}</p>
     </header>
 
-    <!-- Hero cover -->
-    <figure class="container-prose">
-      <Image
-        src={cover}
-        alt={title}
-        widths={[800, 1200, 1800]}
-        sizes="(min-width: 1024px) 1100px, 100vw"
-        class="block mx-auto max-h-[60vh] w-auto h-auto max-w-full rounded-sm"
-      />
-    </figure>
+    <!-- Gallery (XHS-style image strip at the top) -->
+    <div class="container-prose">
+      <Gallery images={galleryImages} alts={[title]} />
+    </div>
 
     <!-- Body -->
     <div class="container-narrow mt-12 prose prose-lg prose-stone">

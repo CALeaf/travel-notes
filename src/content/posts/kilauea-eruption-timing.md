@@ -6,6 +6,9 @@ city: Big Island
 tags: [volcano-chasing, kilauea, volcanoes-np, usgs, hawaii]
 excerpt: "Most people catch a Kīlauea eruption by luck. This is the USGS data, the tilt patterns, and the booking window we used to improve the odds — and what we did when the moment came."
 cover: ../../assets/notes/kilauea-eruption-timing/cover.jpg
+gallery:
+  - ../../assets/notes/kilauea-eruption-timing/eruption-day.jpg
+  - ../../assets/notes/kilauea-eruption-timing/silhouette.jpg
 ---
 
 Most people who see a Kīlauea eruption are at the right place by accident — they happen to be on the Big Island when one starts. I didn't want to leave it to luck. So before booking, I spent a while watching the [USGS data](https://www.usgs.gov/volcanoes/kilauea/volcano-updates), picked a window, and we caught [**Episode 42**](https://www.usgs.gov/volcanoes/kilauea/science/eruption-information).
@@ -49,8 +52,6 @@ USGS publishes a [YouTube live feed](https://youtube.com/@usgs/streams) of the a
 
 ## 4. The signs that something is about to happen
 
-![A sustained lava fountain at Kīlauea — the signal that means it's time to drive in](../../assets/notes/kilauea-eruption-timing/eruption-day.jpg)
-
 Once tilt is approaching the previous eruption's peak **and** the live feed is glowing strongly, raise your check frequency. Watch real-time tilt: rising means closer; falling means the date is slipping. The visible sequence we watched in the live feed, in order of urgency:
 
 1. **Occasional lava splashes or brief overflows.** Getting close. Not yet. Don't drive in.
@@ -78,10 +79,6 @@ One non-USGS tool:
 
 - **Volcano Call App** — phones your number when an eruption starts. The reason to install this is the 3am case: lava begins at night, you sleep through, your trip ends, you missed it. With the app, you wake up.
 
-<figure>
 
-![Silhouetted figure in front of the Episode 42 lava fountains at D point](../../assets/notes/kilauea-eruption-timing/silhouette.jpg)
-
-</figure>
 
 Mahalo to Pele for granting permission. The data tells you where to be; the timing is hers.

@@ -1,0 +1,71 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  images: any[];      // image() refs from frontmatter
+  alts?: string[];    // optional per-image alt text, parallel to images[]
+}
+
+const { images, alts = [] } = Astro.props;
+---
+
+<section class="gallery-wrapper" data-gallery-root>
+  <div class="gallery-strip" data-gallery-strip>
+    {images.map((img, i) => (
+      <div class="gallery-slide">
+        <Image
+          src={img}
+          alt={alts[i] || ''}
+          widths={[600, 900, 1400, 1800]}
+          sizes="(min-width: 1024px) 900px, 100vw"
+          class="gallery-img"
+        />
+      </div>
+    ))}
+  </div>
+
+  {images.length > 1 && (
+    <div class="gallery-controls" aria-hidden="false">
+      <button class="gallery-btn" data-gallery-prev aria-label="Previous image">‹</button>
+      <span class="gallery-counter" data-gallery-counter>1 / {images.length}</span>
+      <button class="gallery-btn" data-gallery-next aria-label="Next image">›</button>
+    </div>
+  )}
+</section>
+
+<script is:inline>
+  (function () {
+    document.querySelectorAll('[data-gallery-root]').forEach((root) => {
+      const strip = root.querySelector('[data-gallery-strip]');
+      const counter = root.querySelector('[data-gallery-counter]');
+      const prev = root.querySelector('[data-gallery-prev]');
+      const next = root.querySelector('[data-gallery-next]');
+      if (!strip) return;
+      const total = strip.children.length;
+
+      const update = () => {
+        if (!counter) return;
+        const w = strip.clientWidth;
+        const idx = w > 0 ? Math.round(strip.scrollLeft / w) : 0;
+        counter.textContent = (idx + 1) + ' / ' + total;
+      };
+      // run after layout settles
+      requestAnimationFrame(update);
+      strip.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update);
+
+      prev && prev.addEventListener('click', () => {
+        strip.scrollBy({ left: -strip.clientWidth, behavior: 'smooth' });
+      });
+      next && next.addEventListener('click', () => {
+        strip.scrollBy({ left: strip.clientWidth, behavior: 'smooth' });
+      });
+
+      // Keyboard left/right when focus is in the gallery area
+      root.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') prev && prev.click();
+        if (e.key === 'ArrowRight') next && next.click();
+      });
+    });
+  })();
+</script>
