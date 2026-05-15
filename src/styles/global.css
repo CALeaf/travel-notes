@@ -60,16 +60,18 @@
     max-height: none;
     margin: 0;
   }
-  /* <figure>-wrapped images are full-width centered hero shots (used for end-of-post closes). */
+  /* <figure>-wrapped images are centered hero shots (used for end-of-post closes).
+   * Cap height tightly so a portrait image doesn't fill the entire viewport. */
   .prose figure {
     margin: 2em auto;
     text-align: center;
   }
   .prose figure img {
     margin: 0 auto;
-    max-height: 75vh;
+    max-height: 55vh;
     max-width: 100%;
     width: auto;
+    height: auto;
   }
 }
 
