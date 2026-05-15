@@ -1,5 +1,5 @@
 ---
-title: "Seven days on Hawaii's Big Island, with a volcano on Day 6"
+title: "Above the volcano, beneath the Milky Way, between the waves | Hawaii"
 date: 2026-02-13
 country: United States
 city: Big Island
