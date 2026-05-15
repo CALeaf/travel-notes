@@ -1,5 +1,5 @@
 ---
-title: "How we timed a Big Island trip to a Kīlauea eruption"
+title: "Watching the tilt, waiting on Pele | Kīlauea"
 date: 2026-02-13
 country: United States
 city: Big Island

@@ -1,5 +1,5 @@
 ---
-title: "Six days, 2,100 miles, five parks: an American Southwest road trip"
+title: "From red rock to neon | American Southwest"
 date: 2026-04-30
 country: United States
 city: American Southwest

@@ -1,5 +1,5 @@
 ---
-title: "Vancouver to Yellowstone in early May: a six-day loop"
+title: "Falling for the planet, again | Yellowstone"
 date: 2025-04-30
 country: United States
 city: Yellowstone

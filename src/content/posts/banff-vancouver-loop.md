@@ -1,5 +1,5 @@
 ---
-title: "Vancouver to Banff in early October: a five-town loop"
+title: "Snow at Lake Louise, kangaroos in Kelowna | Canadian Rockies"
 date: 2024-09-29
 country: Canada
 city: Banff
