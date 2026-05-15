@@ -1,0 +1,38 @@
+# build
+dist/
+.astro/
+
+# deps
+node_modules/
+
+# logs
+npm-debug.log*
+*.log
+
+# env / secrets
+.env
+.env.*
+!.env.example
+
+# scraper artifacts (private)
+scripts/.scrape_progress.json
+scripts/cookies.json
+scripts/.cache/
+scripts/.note_ids.json
+
+# image inbox (private originals with EXIF/GPS, do not commit)
+_inbox/
+
+# raw scraped content (中文原文不发布)
+src/content/_raw/
+
+# OS
+.DS_Store
+.vscode/
+.idea/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/

@@ -1,0 +1,40 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+  size?: 'sm' | 'md' | 'lg';
+}
+
+const { post, size = 'md' } = Astro.props;
+const { title, city, country, date, excerpt, cover } = post.data;
+const dateStr = date.toLocaleDateString('en-US', { month: 'short', year: 'numeric', timeZone: 'UTC' });
+
+// Card aspect strategy:
+// - Landscape covers: use the image's exact aspect (zero crop, the whole image fits).
+// - Portrait covers: use a fixed magazine 4:5 (keeps the grid tidy).
+const isLandscape = cover.width > cover.height * 1.1;
+const portraitAspectClass = size === 'sm' ? 'aspect-[4/3]' : size === 'lg' ? 'aspect-[3/4]' : 'aspect-[4/5]';
+const aspectStyle = isLandscape ? `aspect-ratio: ${cover.width} / ${cover.height};` : '';
+const heightClass = isLandscape ? '' : portraitAspectClass;
+---
+
+<a href={`/posts/${post.slug}/`} class="group block">
+  <div class={`relative overflow-hidden bg-line ${heightClass}`} style={aspectStyle}>
+    <Image
+      src={cover}
+      alt={title}
+      widths={[400, 600, 900]}
+      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+      class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-[1.03]"
+    />
+  </div>
+  <div class="pt-4 space-y-1.5">
+    <p class="eyebrow">{city} · {country} · {dateStr}</p>
+    <h3 class="font-serif text-xl leading-snug group-hover:text-ochre transition">
+      {title}
+    </h3>
+    <p class="text-sm text-muted leading-relaxed line-clamp-2">{excerpt}</p>
+  </div>
+</a>

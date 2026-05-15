@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => !data.draft);
+  const countries = [...new Set(posts.map((p) => p.data.country))];
+  return countries.map((country) => ({
+    params: { country: country.toLowerCase().replace(/\s+/g, '-') },
+    props: {
+      country,
+      posts: posts
+        .filter((p) => p.data.country === country)
+        .sort((a, b) => b.data.date.getTime() - a.data.date.getTime()),
+    },
+  }));
+}
+
+const { country, posts } = Astro.props;
+---
+
+<BaseLayout title={`${country} — Field Notes`}>
+  <section class="container-prose pt-16 md:pt-24 pb-16">
+    <p class="eyebrow mb-6">Destination</p>
+    <h1 class="font-serif text-5xl md:text-6xl">{country}</h1>
+    <p class="mt-4 text-muted">{posts.length} posts</p>
+  </section>
+
+  <section class="container-prose pb-24">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+      {posts.map((p) => <PostCard post={p} />)}
+    </div>
+  </section>
+</BaseLayout>

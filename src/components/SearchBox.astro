@@ -1,0 +1,57 @@
+---
+interface Props {
+  placeholder?: string;
+  autofocus?: boolean;
+}
+const { placeholder = 'Search a city, a dish, a hotel…', autofocus = false } = Astro.props;
+---
+
+<div id="search" data-placeholder={placeholder} data-autofocus={autofocus ? 'true' : 'false'}></div>
+
+<script is:inline>
+  // Pagefind is generated at build time. In dev (`npm run dev`) the asset doesn't exist;
+  // we fall back to a graceful placeholder. Loaded dynamically so Vite doesn't try
+  // to resolve `/pagefind/...` at build time.
+  (async function () {
+    const el = document.getElementById('search');
+    if (!el) return;
+
+    // Use a non-static URL so the bundler doesn't analyze it.
+    const cssHref = ['/', 'pagefind', '/pagefind-ui.css'].join('');
+    const jsHref = ['/', 'pagefind', '/pagefind-ui.js'].join('');
+
+    let exists = false;
+    try {
+      const res = await fetch(jsHref, { method: 'HEAD' });
+      exists = res.ok;
+    } catch (_) {
+      exists = false;
+    }
+
+    if (!exists) {
+      el.innerHTML =
+        '<div class="border border-line rounded p-4 text-sm" style="color:#6B6660">' +
+        '<p class="font-serif italic">Search index is generated at build time.</p>' +
+        '<p class="mt-1">Run <code class="px-1 border border-line">npm run build &amp;&amp; npm run preview</code> to try search.</p>' +
+        '</div>';
+      return;
+    }
+
+    // Inject CSS
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = cssHref;
+    document.head.appendChild(link);
+
+    // Dynamic ES import via variable to bypass Vite static analysis
+    const mod = await import(/* @vite-ignore */ jsHref);
+    new mod.PagefindUI({
+      element: '#search',
+      showImages: true,
+      showSubResults: true,
+      autofocus: el.dataset.autofocus === 'true',
+      placeholder: el.dataset.placeholder,
+      resetStyles: false,
+    });
+  })();
+</script>

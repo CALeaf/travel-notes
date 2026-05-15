@@ -1,0 +1,63 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import DestinationGroup from '../components/DestinationGroup.astro';
+import SearchBox from '../components/SearchBox.astro';
+
+const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+
+const cities = new Set(allPosts.map((p) => p.data.city));
+const countries = new Set(allPosts.map((p) => p.data.country));
+
+// Group by country, preserve recency within each group
+const byCountry = new Map<string, typeof allPosts>();
+for (const post of allPosts) {
+  const arr = byCountry.get(post.data.country) ?? [];
+  arr.push(post);
+  byCountry.set(post.data.country, arr);
+}
+
+// Order countries by most recent post within each
+const orderedCountries = [...byCountry.entries()].sort(
+  (a, b) => b[1][0].data.date.getTime() - a[1][0].data.date.getTime()
+);
+---
+
+<BaseLayout title="Field Notes — A travel log">
+  <!-- HERO -->
+  <section class="container-prose pt-20 pb-16 md:pt-32 md:pb-24">
+    <p class="eyebrow mb-6">A traveler’s field journal</p>
+    <h1 class="font-serif text-5xl md:text-7xl leading-[1.05] tracking-tight max-w-4xl">
+      <span class="italic">Quiet</span> notes from
+      <br />
+      <span class="italic">loud</span> places.
+    </h1>
+    <p class="mt-8 max-w-2xl text-lg text-muted leading-relaxed">
+      Field notes from {cities.size} {cities.size === 1 ? 'city' : 'cities'} across {countries.size} {countries.size === 1 ? 'country' : 'countries'} — food worth flying for,
+      stays worth booking again, and the small in-betweens that make a trip stick.
+    </p>
+    <div class="mt-10 max-w-xl">
+      <SearchBox />
+    </div>
+  </section>
+
+  <!-- COUNTRIES -->
+  <section data-pagefind-ignore class="container-prose pb-24">
+    {
+      orderedCountries.length === 0 ? (
+        <div class="border border-line rounded p-10 text-center text-muted">
+          <p class="font-serif italic text-2xl mb-2">No posts yet.</p>
+          <p class="text-sm">
+            Run the scraper, rewrite drafts to English, and they’ll appear here.
+          </p>
+        </div>
+      ) : (
+        orderedCountries.map(([country, posts]) => (
+          <DestinationGroup country={country} posts={posts} />
+        ))
+      )
+    }
+  </section>
+</BaseLayout>

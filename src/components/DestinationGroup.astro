@@ -1,0 +1,21 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import PostCard from './PostCard.astro';
+
+interface Props {
+  country: string;
+  posts: CollectionEntry<'posts'>[];
+}
+
+const { country, posts } = Astro.props;
+---
+
+<section class="mt-20" id={`country-${country.toLowerCase().replace(/\s+/g, '-')}`}>
+  <header class="border-b border-line pb-3 mb-8 flex items-baseline justify-between">
+    <h2 class="font-serif text-3xl md:text-4xl">{country}</h2>
+    <p class="eyebrow">{posts.length} {posts.length === 1 ? 'post' : 'posts'}</p>
+  </header>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+    {posts.map((post) => <PostCard post={post} />)}
+  </div>
+</section>

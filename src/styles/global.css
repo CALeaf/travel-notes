@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    background: theme('colors.cream');
+    color: theme('colors.ink');
+    font-family: theme('fontFamily.sans');
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background: theme('colors.cream');
+  }
+
+  ::selection {
+    background: theme('colors.ochre' / 30%);
+  }
+}
+
+@layer components {
+  .container-prose {
+    @apply mx-auto px-6 md:px-10 max-w-6xl;
+  }
+  .container-narrow {
+    @apply mx-auto px-6 md:px-10 max-w-3xl;
+  }
+  .eyebrow {
+    @apply uppercase tracking-[0.18em] text-xs text-muted font-medium;
+  }
+  .link-underline {
+    @apply underline decoration-line decoration-1 underline-offset-4 hover:decoration-ochre transition;
+  }
+}
+
+/* Portrait images: float right, let text wrap around (tablet and up).
+ * On mobile they stay full-width in column. */
+.prose h2 { clear: both; }
+.prose hr { clear: both; }
+
+@media (min-width: 768px) {
+  .prose p:has(> img[data-orientation="portrait"]),
+  .prose p:has(> a > img[data-orientation="portrait"]) {
+    float: right;
+    width: 42%;
+    max-width: 320px;
+    margin: 0.4em 0 1.25em 1.75em;
+    clear: right;
+  }
+  .prose p:has(> img[data-orientation="portrait"]) img,
+  .prose p:has(> a > img[data-orientation="portrait"]) img {
+    width: 100%;
+    max-height: none;
+    margin: 0;
+  }
+}
+
+/* Pagefind UI overrides — match the cream/serif theme */
+:root {
+  --pagefind-ui-scale: 0.85;
+  --pagefind-ui-primary: #1A1A1A;
+  --pagefind-ui-text: #1A1A1A;
+  --pagefind-ui-background: #FAF7F2;
+  --pagefind-ui-border: #E8E2D8;
+  --pagefind-ui-tag: #FAF7F2;
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 4px;
+  --pagefind-ui-image-border-radius: 4px;
+  --pagefind-ui-image-box-ratio: 3 / 2;
+  --pagefind-ui-font: Inter, system-ui, sans-serif;
+}
+.pagefind-ui__search-input {
+  font-family: theme('fontFamily.serif') !important;
+  font-style: italic;
+}

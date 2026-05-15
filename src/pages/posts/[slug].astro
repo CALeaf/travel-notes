@@ -1,0 +1,108 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import { Image, getImage } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => !data.draft);
+  return posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
+}
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+}
+
+const { post } = Astro.props;
+const { Content, headings, remarkPluginFrontmatter } = await post.render();
+const { title, city, country, date, excerpt, cover, tags } = post.data;
+const dateStr = date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+const readingMinutes = Math.max(1, Math.round((remarkPluginFrontmatter?.minutesRead ?? 4)));
+
+// Resolve the cover to an absolute URL for OpenGraph / Twitter cards
+const ogCoverImg = await getImage({ src: cover, width: 1200, format: 'jpeg' });
+const ogCoverUrl = new URL(ogCoverImg.src, Astro.site).toString();
+
+// JSON-LD structured data for Google's Article rich result
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description: excerpt,
+  image: [ogCoverUrl],
+  datePublished: date.toISOString(),
+  author: { '@type': 'Person', name: 'Field Notes' },
+  publisher: { '@type': 'Organization', name: 'Field Notes' },
+  mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).toString(),
+  keywords: tags.join(', '),
+};
+
+// "More from {city}" — same city, exclude self, max 3
+const all = await getCollection('posts', ({ data }) => !data.draft);
+const more = all
+  .filter((p) => p.slug !== post.slug && p.data.city === city)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
+---
+
+<BaseLayout
+  title={`${title} — Field Notes`}
+  description={excerpt}
+  cover={ogCoverUrl}
+  ogType="article"
+  publishedTime={date.toISOString()}
+  tags={tags}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article>
+    <!-- Article header -->
+    <header class="container-narrow pt-16 md:pt-24 pb-10 text-center">
+      <p class="eyebrow mb-6">{city} · {country} · {dateStr}</p>
+      <h1 class="font-serif text-4xl md:text-6xl leading-[1.08] tracking-tight">
+        {title}
+      </h1>
+      <p class="mt-6 text-lg text-muted italic font-serif max-w-2xl mx-auto">{excerpt}</p>
+    </header>
+
+    <!-- Hero cover -->
+    <figure class="container-prose">
+      <Image
+        src={cover}
+        alt={title}
+        widths={[800, 1200, 1800]}
+        sizes="(min-width: 1024px) 1100px, 100vw"
+        class="block mx-auto max-h-[80vh] w-auto h-auto max-w-full rounded-sm"
+      />
+    </figure>
+
+    <!-- Body -->
+    <div class="container-narrow mt-12 prose prose-lg prose-stone">
+      <Content />
+    </div>
+
+    <!-- Tags -->
+    {
+      tags.length > 0 && (
+        <div class="container-narrow mt-12 flex flex-wrap gap-2">
+          {tags.map((t) => (
+            <span class="text-xs uppercase tracking-wider text-muted border border-line rounded-full px-3 py-1">
+              {t}
+            </span>
+          ))}
+        </div>
+      )
+    }
+  </article>
+
+  <!-- More from this city -->
+  {
+    more.length > 0 && (
+      <section class="container-prose mt-24 pt-12 border-t border-line">
+        <h2 class="font-serif text-2xl mb-8">More from {city}</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-x-8 gap-y-12">
+          {more.map((p) => <PostCard post={p} size="sm" />)}
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>
