@@ -33,15 +33,13 @@ Before the trip every Chinese-language guide I'd read warned that I'd be offline
 
 We had usable signal at Artist Point, near Old Faithful, near the Mammoth Hotel, on the Fairy Falls Trail overlook, and along the boardwalk from Old Faithful to Morning Glory Pool. From a bed inside Old Faithful Inn I streamed Xiaohongshu videos at full speed. I tethered my partner's phone and we watched together — no lag. My carrier was Koodo (Canadian, US–Canada roaming plan) on an iPhone 15 Pro; AT&T users we ran into in the park reported the same.
 
-If you've been planning around being offline, drop the planning.
-
 ## Hotels worth picking carefully
 
 Six nights, four hotels worth talking about.
 
 **Old Faithful Inn** (inside the park). The selling point is the location — you're a five-minute walk from the geyser, watching it from the upper deck. Rooms have private bathrooms (the recurring XHS warning about communal toilets is outdated). Cell signal works inside the building. But the walls are thin enough that you hear the next room *and* the bathroom exhaust fan, which keeps running after you flip the switch. The heating vent rattles. Check-in is strict — we arrived at 3:45pm and were sent away until 4:00 exactly. Next time we'd try Snow Lodge or Canyon Lodge instead — but stay inside the park either way.
 
-**Mammoth Hot Springs Hotel** (inside the park). Excellent across the board: big room, quiet, private bathroom, WiFi works, the front desk let us check in early. The bison burger at the restaurant is **$18** — for an in-park restaurant that's a real price.
+**Mammoth Hot Springs Hotel** (inside the park). Excellent across the board: big room, quiet, private bathroom, WiFi works, the front desk let us check in early. The bison burger at the restaurant is **$18** — surprisingly reasonable for an in-park restaurant.
 
 **Kelly Inn West Yellowstone** (gateway town). A few minutes' drive from the West entrance, plenty of restaurants nearby, larger room and quieter than the Spokane Fairfield. Worth it as the overnight before park days.
 
