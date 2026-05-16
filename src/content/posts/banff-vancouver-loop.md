@@ -18,7 +18,7 @@ gallery:
   - ../../assets/notes/banff-vancouver-loop/08-peyto.jpg
 ---
 
-We drove the Vancouver–Banff loop in late September into early October 2024 — a seven-day trip with overnights in five different towns. The reason we went, beyond the Rockies themselves, was wedding photos: a dress fitting in Calgary on the way out, and a photographer in Banff after. What I wish someone had told me before we left: October weather in the mountains is its own animal, BC and Alberta really do enforce the winter-tire rule on the highways, and one of the most XHS-hyped hotels on the route was the one I'd skip next time.
+We drove the Vancouver–Banff loop in late September into early October 2024 — a seven-day trip with overnights in five different towns. The reason we went, beyond the Rockies themselves, was wedding photos: a dress fitting in Calgary on the way out, and a photographer in Banff after. What I wish someone had told me before we left: October weather in the mountains is its own animal, BC and Alberta really do enforce the winter-tire rule on the highways, and one of the most-recommended hotels on the route was the one I'd skip next time.
 
 ## The route at a glance
 
@@ -33,7 +33,7 @@ We drove the Vancouver–Banff loop in late September into early October 2024 �
 
 **Kelowna — The Royal Anne Hotel.** Strongly recommend stopping. Around CAD $200 a night, restaurants nearby, underground parking (safer at night), free breakfast — solid value. The reason to stop in Kelowna at all: the **kangaroo farm**. You can pet kangaroos *and* capybaras. An hour or two passes quickly and feels like the most distinctive thing on this whole route.
 
-**Revelstoke — Basecamp Resorts.** The one I'd skip. It's popular on Xiaohongshu, but: it sits at the edge of town, runs ~$200+ when other Revelstoke hotels are often around $100+, has no breakfast, and is structured like an Airbnb where you handle the cleaning and trash on departure (which made me anxious about cleaning-fee charges). The view from the window is genuinely nice, and there's a kitchen — families cooking together might get more out of it than two of us doing a one-night transit stop. Revelstoke itself didn't have much to do on a quick visit, and the only overpriced meal of the whole trip was here.
+**Revelstoke — Basecamp Resorts.** The one I'd skip. It gets a lot of hype, but: it sits at the edge of town, runs ~$200+ when other Revelstoke hotels are often around $100+, has no breakfast, and is structured like an Airbnb where you handle the cleaning and trash on departure (which made me anxious about cleaning-fee charges). The view from the window is genuinely nice, and there's a kitchen — families cooking together might get more out of it than two of us doing a one-night transit stop. Revelstoke itself didn't have much to do on a quick visit, and the only overpriced meal of the whole trip was here.
 
 **Calgary — Delta Hotel Calgary South.** The big positive surprise. A Marriott property — and the only hotel on the entire route that gave us slippers and bottled water. The on-site hot tub was a relief after a long drive; the hotel restaurant has a pool table, beer, and games. A genuinely chill night.
 
@@ -70,4 +70,4 @@ You don't really need a Calgary stop on a Banff-focused itinerary; we only staye
 
 ## Worth it?
 
-Yes. The dress fitting in Calgary worked, the photos came out, and we drove the whole loop on snow tires that earned their cost on the first afternoon. The drive itself is half the trip — pace it with overnight stops in towns you actually want to be in, and leave the most expensive XHS-hyped hotels off the list.
+Yes. The dress fitting in Calgary worked, the photos came out, and we drove the whole loop on snow tires that earned their cost on the first afternoon. The drive itself is half the trip — pace it with overnight stops in towns you actually want to be in, and don't assume the most hyped hotel on the route is the right one.

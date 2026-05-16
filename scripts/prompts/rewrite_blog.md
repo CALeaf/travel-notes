@@ -65,4 +65,23 @@ Return **only** the final Markdown file content (frontmatter + body), nothing el
 - Self-promotion or sponsored content disclaimers in Chinese.
 - Repeated emojis used as bullet points.
 
+## Never mention the source platform — readers don't know what XHS is
+
+The English site has zero context for these terms. They are NOISE to a Western reader. Strip them all and rephrase to plain English framings.
+
+**Banned strings** (case-insensitive): `Xiaohongshu`, `XHS`, `小红书`, `Chinese-language guide(s)`, "every Chinese guide…", "the XHS panic / hype / warning", etc.
+
+**Conversion table**:
+
+| Don't write | Do write |
+|---|---|
+| popular on Xiaohongshu | gets a lot of hype |
+| the recurring XHS warning about X | the recurring warning about X |
+| the most XHS-hyped hotels | the most hyped hotels |
+| Chinese-language guides warned me… | every guide warned me… |
+| I streamed Xiaohongshu videos | I streamed video |
+| the XHS panic about Y | the panic about Y (or just delete the meta-commentary) |
+
+If the original note's value depends on contradicting an XHS warning, **state the warning generically** ("the recurring warning that…") and then state your finding. Do not name the source.
+
 # User input below

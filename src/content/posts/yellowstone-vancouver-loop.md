@@ -16,7 +16,7 @@ gallery:
   - ../../assets/notes/yellowstone-vancouver-loop/07-lamar-sunset.jpg
 ---
 
-We drove from Vancouver to Yellowstone in early May 2025 and got two sunny days back-to-back inside the park — luck the shoulder season doesn't promise. The customs queue on Day 1 ate three hours we hadn't planned for. The cell signal inside the park was better than every Chinese-language guide had warned us about. And the heat vent in our Old Faithful Inn room was loud enough that we'll pick a different cabin next time. Here's what worked and what we'd change.
+We drove from Vancouver to Yellowstone in early May 2025 and got two sunny days back-to-back inside the park — luck the shoulder season doesn't promise. The customs queue on Day 1 ate three hours we hadn't planned for. The cell signal inside the park was better than every guide had warned us about. And the heat vent in our Old Faithful Inn room was loud enough that we'll pick a different cabin next time. Here's what worked and what we'd change.
 
 ## The route at a glance
 
@@ -29,15 +29,15 @@ We drove from Vancouver to Yellowstone in early May 2025 and got two sunny days 
 
 ## The cell-signal myth, busted
 
-Before the trip every Chinese-language guide I'd read warned that I'd be offline inside the park. I downloaded movies. I screenshotted maps. I prepared for a digital detox. It wasn't necessary.
+Before the trip every guide I'd read warned that I'd be offline inside the park. I downloaded movies. I screenshotted maps. I prepared for a digital detox. It wasn't necessary.
 
-We had usable signal at Artist Point, near Old Faithful, near the Mammoth Hotel, on the Fairy Falls Trail overlook, and along the boardwalk from Old Faithful to Morning Glory Pool. From a bed inside Old Faithful Inn I streamed Xiaohongshu videos at full speed. I tethered my partner's phone and we watched together — no lag. My carrier was Koodo (Canadian, US–Canada roaming plan) on an iPhone 15 Pro; AT&T users we ran into in the park reported the same.
+We had usable signal at Artist Point, near Old Faithful, near the Mammoth Hotel, on the Fairy Falls Trail overlook, and along the boardwalk from Old Faithful to Morning Glory Pool. From a bed inside Old Faithful Inn I streamed video at full speed. I tethered my partner's phone and we watched together — no lag. My carrier was Koodo (Canadian, US–Canada roaming plan) on an iPhone 15 Pro; AT&T users we ran into in the park reported the same.
 
 ## Hotels worth picking carefully
 
 Six nights, four hotels worth talking about.
 
-**Old Faithful Inn** (inside the park). The selling point is the location — you're a five-minute walk from the geyser, watching it from the upper deck. Rooms have private bathrooms (the recurring XHS warning about communal toilets is outdated). Cell signal works inside the building. But the walls are thin enough that you hear the next room *and* the bathroom exhaust fan, which keeps running after you flip the switch. The heating vent rattles. Check-in is strict — we arrived at 3:45pm and were sent away until 4:00 exactly. Next time we'd try Snow Lodge or Canyon Lodge instead — but stay inside the park either way.
+**Old Faithful Inn** (inside the park). The selling point is the location — you're a five-minute walk from the geyser, watching it from the upper deck. Rooms have private bathrooms (the recurring warning about communal toilets is outdated). Cell signal works inside the building. But the walls are thin enough that you hear the next room *and* the bathroom exhaust fan, which keeps running after you flip the switch. The heating vent rattles. Check-in is strict — we arrived at 3:45pm and were sent away until 4:00 exactly. Next time we'd try Snow Lodge or Canyon Lodge instead — but stay inside the park either way.
 
 **Mammoth Hot Springs Hotel** (inside the park). Excellent across the board: big room, quiet, private bathroom, WiFi works, the front desk let us check in early. The bison burger at the restaurant is **$18** — surprisingly reasonable for an in-park restaurant.
 
@@ -52,7 +52,7 @@ Book in-park lodging on the **official site** (yellowstonenationalparklodges.com
 1. **Free cancellation up to a month out.** Book aggressively early — if your plans change, you cancel without penalty.
 2. **Same-rate price-match.** If you see a lower rate after booking, contact customer service and they'll match it. No need to cancel and rebook.
 
-Rooms with private bathrooms exist at every in-park hotel, including the historic ones. Don't let the "old hotel = shared toilet" XHS panic talk you into a more expensive newer lodge.
+Rooms with private bathrooms exist at every in-park hotel, including the historic ones. Don't let the "old hotel = shared toilet" panic talk you into a more expensive newer lodge.
 
 ## Park timing — getting the photos you came for
 
