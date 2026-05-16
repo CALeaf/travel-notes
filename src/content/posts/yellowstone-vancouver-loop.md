@@ -6,6 +6,14 @@ city: Yellowstone
 tags: [road-trip, yellowstone, mammoth, lamar-valley, old-faithful, spokane, hotels]
 excerpt: "Three sunny days inside the park, three hotels worth picking carefully, and the cell-signal myth busted from a bed at Old Faithful Inn."
 cover: ../../assets/notes/yellowstone-vancouver-loop/cover.jpg
+gallery:
+  - ../../assets/notes/yellowstone-vancouver-loop/01-old-faithful.jpg
+  - ../../assets/notes/yellowstone-vancouver-loop/02-morning-glory.jpg
+  - ../../assets/notes/yellowstone-vancouver-loop/03-mammoth.jpg
+  - ../../assets/notes/yellowstone-vancouver-loop/04-lower-falls.jpg
+  - ../../assets/notes/yellowstone-vancouver-loop/05-norris.jpg
+  - ../../assets/notes/yellowstone-vancouver-loop/06-lamar-bison.jpg
+  - ../../assets/notes/yellowstone-vancouver-loop/07-lamar-sunset.jpg
 ---
 
 We drove from Vancouver to Yellowstone in early May 2025 and got two sunny days back-to-back inside the park — luck the shoulder season doesn't promise. The customs queue on Day 1 ate three hours we hadn't planned for. The cell signal inside the park was better than every Chinese-language guide had warned us about. And the heat vent in our Old Faithful Inn room was loud enough that we'll pick a different cabin next time. Here's what worked and what we'd change.

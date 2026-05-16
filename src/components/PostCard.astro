@@ -11,17 +11,19 @@ const { post, size = 'md' } = Astro.props;
 const { title, city, country, date, excerpt, cover } = post.data;
 const dateStr = date.toLocaleDateString('en-US', { month: 'short', year: 'numeric', timeZone: 'UTC' });
 
-// Card aspect strategy:
-// - Landscape covers: use the image's exact aspect (zero crop, the whole image fits).
-// - Portrait covers: use a fixed magazine 4:5 (keeps the grid tidy).
+// Card aspect strategy: every card in a grid must have the same height, otherwise
+// rows look ragged when covers have different native aspects (e.g. an illustrated
+// map vs a 3:2 photo). We pick one card aspect per size and let object-cover
+// handle the small crop. Portrait covers get a taller frame so they don't crop in
+// half; landscape covers use a magazine 3:2.
 const isLandscape = cover.width > cover.height * 1.1;
+const landscapeAspectClass = size === 'sm' ? 'aspect-[3/2]' : size === 'lg' ? 'aspect-[3/2]' : 'aspect-[3/2]';
 const portraitAspectClass = size === 'sm' ? 'aspect-[4/3]' : size === 'lg' ? 'aspect-[3/4]' : 'aspect-[4/5]';
-const aspectStyle = isLandscape ? `aspect-ratio: ${cover.width} / ${cover.height};` : '';
-const heightClass = isLandscape ? '' : portraitAspectClass;
+const heightClass = isLandscape ? landscapeAspectClass : portraitAspectClass;
 ---
 
 <a href={`/posts/${post.slug}/`} class="group block">
-  <div class={`relative overflow-hidden bg-line ${heightClass}`} style={aspectStyle}>
+  <div class={`relative overflow-hidden bg-line ${heightClass}`}>
     <Image
       src={cover}
       alt={title}

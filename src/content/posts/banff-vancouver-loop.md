@@ -6,6 +6,16 @@ city: Banff
 tags: [road-trip, banff, canadian-rockies, kelowna, calgary, hotels, snow-tires]
 excerpt: "Seven days from BC to Alberta and back, overnights in five towns, plus ten things that made the October weather bearable."
 cover: ../../assets/notes/banff-vancouver-loop/cover.jpg
+gallery:
+  - ../../assets/notes/banff-vancouver-loop/01-kangaroo.jpg
+  - ../../assets/notes/banff-vancouver-loop/02-lake-louise-peak.jpg
+  - ../../assets/notes/banff-vancouver-loop/03-paddle.jpg
+  - ../../assets/notes/banff-vancouver-loop/04-moraine.jpg
+  - ../../assets/notes/banff-vancouver-loop/05-highway-aspens.jpg
+  - ../../assets/notes/banff-vancouver-loop/06-sulphur-golden.jpg
+  - ../../assets/notes/banff-vancouver-loop/07-sulphur-dusk.jpg
+  - ../../assets/notes/banff-vancouver-loop/08-peyto.jpg
+  - ../../assets/notes/banff-vancouver-loop/09-wedding.jpg
 ---
 
 We drove the Vancouver–Banff loop in late September into early October 2024 — a seven-day trip with overnights in five different towns. The reason we went, beyond the Rockies themselves, was wedding photos: a dress fitting in Calgary on the way out, and a photographer in Banff after. What I wish someone had told me before we left: October weather in the mountains is its own animal, BC and Alberta really do enforce the winter-tire rule on the highways, and one of the most XHS-hyped hotels on the route was the one I'd skip next time.
