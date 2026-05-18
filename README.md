@@ -1,4 +1,4 @@
-# Field Notes — your travel blog
+# She Leaves Notes — travel blog
 
 A static, searchable, English-language travel blog generated from your Xiaohongshu (小红书) notes. Magazine layout, big covers, full-text search, deploys to GitHub Pages on every push.
 

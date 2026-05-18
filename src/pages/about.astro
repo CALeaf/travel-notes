@@ -1,27 +1,44 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+// TODO: replace this placeholder URL with your actual LinkedIn profile URL.
+// The visible label below stays the same — only this href needs updating.
+const LINKEDIN_URL = 'https://www.linkedin.com/in/xuenan-replace-me/';
 ---
 
-<BaseLayout title="About — Field Notes">
+<BaseLayout title="About — She Leaves Notes">
   <section class="container-narrow pt-16 md:pt-24 pb-24">
     <p class="eyebrow mb-6">About</p>
-    <h1 class="font-serif text-4xl md:text-5xl mb-8">Why this site exists.</h1>
+    <h1 class="font-serif text-4xl md:text-5xl mb-10">
+      I'm <span class="italic">Xuenan</span>.
+    </h1>
 
     <div class="prose prose-lg prose-stone">
       <p>
-        I’ve spent years scribbling travel notes into a Chinese social app — quick reviews of
-        a noodle shop, a hotel, a side street worth the detour. They lived there, until the
-        algorithm buried them.
+        I write travel notes — what to eat, where to stay, how to get there, and whether
+        I'd go back. This site is where they live, in English, properly indexed, away
+        from any algorithm.
       </p>
       <p>
-        This is the same material, rewritten in English, slowed down, and given a permanent home.
-        Each post is a field note: what to eat, where to stay, how to get there, and whether
-        I’d go back.
+        The name comes from my nickname <em>树叶</em> — which means "leaves" — and from
+        what this site does: leaves notes behind, one trip at a time.
       </p>
       <p>
-        Photos are mine unless noted otherwise. Prices are best-effort and shift quickly — check
-        before you go.
+        Photos are mine unless noted otherwise. Prices are best-effort and shift
+        quickly — check before you go.
       </p>
+    </div>
+
+    <div class="mt-12">
+      <a
+        href={LINKEDIN_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 border border-line rounded-full px-5 py-2.5 text-sm font-medium hover:bg-line/40 transition"
+      >
+        Find me on LinkedIn
+        <span aria-hidden="true">→</span>
+      </a>
     </div>
   </section>
 </BaseLayout>

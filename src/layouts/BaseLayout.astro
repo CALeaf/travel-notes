@@ -12,14 +12,14 @@ interface Props {
 
 const {
   title,
-  description = 'Field notes from travels across Asia and beyond.',
+  description = 'Travel notes from Xuenan — what to eat, where to stay, how to get there, and whether to go back.',
   cover,
   ogType = 'website',
   publishedTime,
   tags,
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
-const siteName = 'Field Notes';
+const siteName = 'She Leaves Notes';
 ---
 
 <!doctype html>
@@ -64,7 +64,7 @@ const siteName = 'Field Notes';
     <header class="border-b border-line">
       <div class="container-prose flex items-center justify-between py-5">
         <a href="/" class="font-serif text-xl tracking-tight">
-          <span class="italic">Field</span>&nbsp;Notes
+          She&nbsp;<span class="italic">Leaves</span>&nbsp;Notes
         </a>
         <nav class="flex items-center gap-6 text-sm">
           <a href="/" class="link-underline">All</a>
@@ -102,7 +102,7 @@ const siteName = 'Field Notes';
 
     <footer class="border-t border-line mt-24">
       <div class="container-prose py-10 text-sm text-muted flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-        <p class="font-serif italic">Field Notes — a personal travel log.</p>
+        <p class="font-serif italic">She Leaves Notes — a personal travel log.</p>
         <p>&copy; {new Date().getFullYear()}. Built with Astro.</p>
       </div>
     </footer>

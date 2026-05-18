@@ -35,8 +35,8 @@ const jsonLd = {
   description: excerpt,
   image: [ogCoverUrl],
   datePublished: date.toISOString(),
-  author: { '@type': 'Person', name: 'Field Notes' },
-  publisher: { '@type': 'Organization', name: 'Field Notes' },
+  author: { '@type': 'Person', name: 'She Leaves Notes' },
+  publisher: { '@type': 'Organization', name: 'She Leaves Notes' },
   mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).toString(),
   keywords: tags.join(', '),
 };
@@ -50,7 +50,7 @@ const more = all
 ---
 
 <BaseLayout
-  title={`${title} — Field Notes`}
+  title={`${title} — She Leaves Notes`}
   description={excerpt}
   cover={ogCoverUrl}
   ogType="article"
