@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import DestinationGroup from '../components/DestinationGroup.astro';
+import PostCard from '../components/PostCard.astro';
 import SearchBox from '../components/SearchBox.astro';
 
 const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
@@ -43,8 +44,21 @@ const orderedCountries = [...byCountry.entries()].sort(
     </div>
   </section>
 
+  <!-- RECENTLY -->
+  {allPosts.length > 0 && (
+    <section data-pagefind-ignore class="container-prose pb-20 border-t border-line pt-16">
+      <div class="flex items-baseline justify-between mb-10">
+        <h2 class="font-serif text-3xl md:text-4xl">Recently</h2>
+        <a href="#by-country" class="text-sm link-underline">Browse all ↓</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12">
+        {allPosts.slice(0, 3).map((p) => <PostCard post={p} />)}
+      </div>
+    </section>
+  )}
+
   <!-- COUNTRIES -->
-  <section data-pagefind-ignore class="container-prose pb-24">
+  <section id="by-country" data-pagefind-ignore class="container-prose pb-24">
     {
       orderedCountries.length === 0 ? (
         <div class="border border-line rounded p-10 text-center text-muted">

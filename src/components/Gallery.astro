@@ -19,6 +19,8 @@ const { images, alts = [] } = Astro.props;
           widths={[600, 900, 1400, 1800]}
           sizes="(min-width: 1024px) 900px, 100vw"
           class="gallery-img"
+          data-gallery-clickable
+          data-full-src={img.src}
         />
       </div>
     ))}
@@ -33,8 +35,18 @@ const { images, alts = [] } = Astro.props;
   )}
 </section>
 
+<!-- LIGHTBOX (single instance per page, populated on click) -->
+<div id="lightbox-root" class="lightbox-root" data-open="false" aria-hidden="true">
+  <button class="lightbox-close" data-lightbox-close aria-label="Close (Esc)">×</button>
+  <button class="lightbox-nav lightbox-prev" data-lightbox-prev aria-label="Previous">‹</button>
+  <img class="lightbox-img" data-lightbox-img alt="" />
+  <button class="lightbox-nav lightbox-next" data-lightbox-next aria-label="Next">›</button>
+  <div class="lightbox-counter" data-lightbox-counter></div>
+</div>
+
 <script is:inline>
   (function () {
+    // -- Gallery strip (scroll-snap horizontal) --
     document.querySelectorAll('[data-gallery-root]').forEach((root) => {
       const strip = root.querySelector('[data-gallery-strip]');
       const counter = root.querySelector('[data-gallery-counter]');
@@ -49,7 +61,6 @@ const { images, alts = [] } = Astro.props;
         const idx = w > 0 ? Math.round(strip.scrollLeft / w) : 0;
         counter.textContent = (idx + 1) + ' / ' + total;
       };
-      // run after layout settles
       requestAnimationFrame(update);
       strip.addEventListener('scroll', update, { passive: true });
       window.addEventListener('resize', update);
@@ -61,11 +72,125 @@ const { images, alts = [] } = Astro.props;
         strip.scrollBy({ left: strip.clientWidth, behavior: 'smooth' });
       });
 
-      // Keyboard left/right when focus is in the gallery area
       root.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowLeft') prev && prev.click();
         if (e.key === 'ArrowRight') next && next.click();
       });
     });
+
+    // -- Lightbox --
+    const lb = document.getElementById('lightbox-root');
+    if (!lb) return;
+    const lbImg = lb.querySelector('[data-lightbox-img]');
+    const lbCounter = lb.querySelector('[data-lightbox-counter]');
+    const lbClose = lb.querySelector('[data-lightbox-close]');
+    const lbPrev = lb.querySelector('[data-lightbox-prev]');
+    const lbNext = lb.querySelector('[data-lightbox-next]');
+
+    // Collect all gallery images on the page in DOM order
+    const all = Array.from(document.querySelectorAll('[data-gallery-clickable]'));
+    let current = 0;
+
+    const open = (idx) => {
+      current = idx;
+      const img = all[current];
+      const fullSrc = img.getAttribute('data-full-src') || img.src;
+      lbImg.src = fullSrc;
+      lbImg.alt = img.alt || '';
+      lbCounter.textContent = (current + 1) + ' / ' + all.length;
+      lb.setAttribute('data-open', 'true');
+      lb.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    };
+    const close = () => {
+      lb.setAttribute('data-open', 'false');
+      lb.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    };
+    const step = (delta) => {
+      current = (current + delta + all.length) % all.length;
+      open(current);
+    };
+
+    all.forEach((img, i) => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', (e) => { e.preventDefault(); open(i); });
+    });
+    lbClose.addEventListener('click', close);
+    lbPrev.addEventListener('click', () => step(-1));
+    lbNext.addEventListener('click', () => step(1));
+    lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+    document.addEventListener('keydown', (e) => {
+      if (lb.getAttribute('data-open') !== 'true') return;
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft') step(-1);
+      if (e.key === 'ArrowRight') step(1);
+    });
   })();
 </script>
+
+<style>
+  .lightbox-root {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 20, 20, 0.94);
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .lightbox-root[data-open='true'] { display: flex; }
+  .lightbox-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    user-select: none;
+  }
+  .lightbox-close, .lightbox-nav {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+  }
+  .lightbox-close:hover, .lightbox-nav:hover { background: rgba(255, 255, 255, 0.22); }
+  .lightbox-close {
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .lightbox-nav {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.75rem;
+    line-height: 1;
+  }
+  .lightbox-prev { left: 1.5rem; }
+  .lightbox-next { right: 1.5rem; }
+  .lightbox-counter {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.875rem;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.05em;
+  }
+  @media (max-width: 640px) {
+    .lightbox-nav { width: 2.25rem; height: 2.25rem; font-size: 1.25rem; }
+    .lightbox-prev { left: 0.5rem; }
+    .lightbox-next { right: 0.5rem; }
+  }
+</style>
