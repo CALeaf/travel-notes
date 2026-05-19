@@ -1,11 +1,14 @@
 ---
 title: "A walking loop, a boat in the spray | Toronto + Niagara"
-date: 2025-06-15
+date: 2025-07-26
 country: Canada
 city: Toronto
 tags: [city-guide, toronto, niagara-falls, public-transit, hotels, walking-tour]
 excerpt: "Two days in Toronto and at Niagara without a rental car. The boat tour at the Falls is the only ticket worth its own day; everything else is good-enough."
 cover: ../../assets/notes/toronto-niagara-no-car-loop/cover.jpg
+gallery:
+  - ../../assets/notes/toronto-niagara-no-car-loop/01-horseshoe-wide.jpg
+  - ../../assets/notes/toronto-niagara-no-car-loop/02-american-falls.jpg
 ---
 
 Two days in Toronto, no rental car, one of them at the Falls. Most of the structural decisions on the trip came down to two questions: which Niagara attractions are actually worth doing, and is the Toronto City Walk worth your effort if you're not really a downtown sightseer. Short answers: the boat, and yes-but-only-just.

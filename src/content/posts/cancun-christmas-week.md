@@ -6,6 +6,10 @@ city: Cancún
 tags: [beach, cancun, mexico, all-inclusive, hotels, jungle-tour, xplor, snorkel]
 excerpt: "Six days at Riu Kukulkan over Christmas with the two day tours that turned the trip around — a self-drive speedboat snorkel and a full day at Xplor — viewed from the perspective of a non-swimmer who's afraid of heights."
 cover: ../../assets/notes/cancun-christmas-week/cover.jpg
+gallery:
+  - ../../assets/notes/cancun-christmas-week/02-turquoise-wave.jpg
+  - ../../assets/notes/cancun-christmas-week/01-palms-beach.jpg
+  - ../../assets/notes/cancun-christmas-week/03-stormy-surf.jpg
 ---
 
 We landed in Cancún on Christmas morning after an overnight flight, and the first thing that didn't make sense was the water. The Caribbean is impossibly blue even when the sky is cloudy — I genuinely thought my car window was tinted, or I'd left sunglasses on, or I was hallucinating from the red-eye. Six days, five nights, one all-inclusive base hotel, two day tours I'm still thinking about, and the most useful thing I learned was that a chronic non-swimmer who's afraid of heights can still have a great time in Mexico.

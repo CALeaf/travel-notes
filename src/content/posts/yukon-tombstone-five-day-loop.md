@@ -6,6 +6,14 @@ city: Yukon
 tags: [road-trip, yukon, tombstone, dawson-city, fall-foliage, aurora, hiking, helicopter]
 excerpt: "Five days from Whitehorse to Dawson and back over Labor Day. Stack the activities low to high — hike, then drive, then helicopter — and let each day raise the bar."
 cover: ../../assets/notes/yukon-tombstone-five-day-loop/cover.jpg
+gallery:
+  - ../../assets/notes/yukon-tombstone-five-day-loop/06-helicopter.jpg
+  - ../../assets/notes/yukon-tombstone-five-day-loop/01-spires-dempster.jpg
+  - ../../assets/notes/yukon-tombstone-five-day-loop/04-valley-wide.jpg
+  - ../../assets/notes/yukon-tombstone-five-day-loop/05-range-overcast.jpg
+  - ../../assets/notes/yukon-tombstone-five-day-loop/03-spires-close.jpg
+  - ../../assets/notes/yukon-tombstone-five-day-loop/07-two-spires.jpg
+  - ../../assets/notes/yukon-tombstone-five-day-loop/02-tundra-yellow.jpg
 ---
 
 I went to Tombstone because of one photo. Saw it, decided I had to go, booked the Labor Day weekend, flew Vancouver to Whitehorse solo, drove to Dawson, and spent five days in a corner of Yukon that doesn't really look like anywhere else. The scenery exceeded what the photo had promised — and the only structural advice I'd give anyone planning the same trip is to order the days carefully, because each one raises the bar on the one before it.
