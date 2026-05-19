@@ -17,7 +17,7 @@ gallery:
   - ../../assets/notes/yukon-tombstone-five-day-loop/02-tundra-yellow.jpg
 ---
 
-I went to Tombstone because of one photo. Saw it, decided I had to go, booked the Labor Day weekend, flew Vancouver to Whitehorse solo, drove to Dawson, and spent five days in a corner of Yukon that doesn't really look like anywhere else. The scenery exceeded what the photo had promised — and the only structural advice I'd give anyone planning the same trip is to order the days carefully, because each one raises the bar on the one before it.
+We went to Tombstone because of one photo. Saw it, decided we had to go, booked the Labor Day weekend, flew Vancouver to Whitehorse, drove to Dawson, and spent five days in a corner of Yukon that doesn't really look like anywhere else. The scenery exceeded what the photo had promised — and the only structural advice I'd give anyone planning the same trip is to order the days carefully, because each one raises the bar on the one before it.
 
 ## The route at a glance
 
@@ -61,12 +61,12 @@ After the flight, drive back to Whitehorse. That evening, head out from town to 
 
 - **Book the rental car and Dawson hotel weeks ahead.** Dawson is small; rooms and cars sell out before the long weekend. If you fly into Dawson direct (a Whitehorse → Dawson hop exists), there's no rental car on that end — you'd be stuck for the drive segments, so I'd fly into Whitehorse.
 - **Confirm the rental allows the Dempster Highway.** It's the only road to Tombstone, and not every rental contract includes it. Ask explicitly before you sign.
-- **Vehicle**: I drove a pickup, and the unpaved sections were fine at a slow, careful pace. You don't need a 4×4 specifically — you need ground clearance and patience.
+- **Vehicle**: we drove a pickup, and the unpaved sections were fine at a slow, careful pace. You don't need a 4×4 specifically — you need ground clearance and patience.
 - **Layers, layers, layers.** The lookout temperature changes hour to hour. Multi-layer beats one heavy jacket.
 - **Locals in Dawson are exceptionally friendly** — the kind of small-town Canadian friendliness that's hard to describe in words but recalibrates your sense of what a town can feel like.
 
 ## Worth it?
 
-The first photo I'd seen of Tombstone undersold it. The trip exceeded it instead — partly because the order of the days kept escalating the wow, and partly because the helicopter put me in places I never could have walked to. If you're going to fly this far north for a long weekend, give it five days, book the helicopter, and let the trip end with the sky over Whitehorse instead of in a hotel parking lot.
+The first photo I'd seen of Tombstone undersold it. The trip exceeded it instead — partly because the order of the days kept escalating the wow, and partly because the helicopter put us in places we never could have walked to. If you're going to fly this far north for a long weekend, give it five days, book the helicopter, and let the trip end with the sky over Whitehorse instead of in a hotel parking lot.
 
 Your own Tombstone moment is worth getting to.
