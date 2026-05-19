@@ -83,9 +83,12 @@ const more = all
       tags.length > 0 && (
         <div class="container-narrow mt-12 flex flex-wrap gap-2">
           {tags.map((t) => (
-            <span class="text-xs uppercase tracking-wider text-muted border border-line rounded-full px-3 py-1">
+            <a
+              href={`/tags/${t}/`}
+              class="text-xs uppercase tracking-wider text-muted border border-line rounded-full px-3 py-1 hover:bg-line/40 hover:text-ink transition"
+            >
               {t}
-            </span>
+            </a>
           ))}
         </div>
       )

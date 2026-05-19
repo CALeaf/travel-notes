@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const posts = await getCollection('posts', ({ data }) => !data.draft);
+const counts = new Map<string, number>();
+for (const p of posts) {
+  for (const t of p.data.tags) {
+    counts.set(t, (counts.get(t) ?? 0) + 1);
+  }
+}
+// Sort by count desc, then alphabetically
+const tags = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+---
+
+<BaseLayout title="Tags — She Leaves Notes" description="Browse posts by tag.">
+  <section class="container-prose pt-16 md:pt-24 pb-12">
+    <p class="eyebrow mb-6">Tags</p>
+    <h1 class="font-serif text-5xl md:text-6xl">Browse by tag.</h1>
+    <p class="mt-4 text-muted">{tags.length} tags across {posts.length} posts.</p>
+  </section>
+
+  <section class="container-prose pb-24">
+    <div class="flex flex-wrap gap-3">
+      {tags.map(([t, n]) => (
+        <a
+          href={`/tags/${t}/`}
+          class="inline-flex items-center gap-2 border border-line rounded-full px-4 py-2 text-sm hover:bg-line/40 transition"
+        >
+          <span class="text-muted">#</span>{t}
+          <span class="text-xs text-muted tabular-nums">{n}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
