@@ -22,9 +22,9 @@ We went to Tombstone because of one photo. Saw it, decided we had to go, booked 
 ## The route at a glance
 
 - **Day 1–2** — Vancouver → Whitehorse (fly), pick up rental car, drive to **Dawson City** (~6 hours). You can split this with a night in Whitehorse; the road has several small rivers worth stopping for.
-- **Day 3** — **Tombstone**: Grizzly Lake Trail to the first lookout, then back. Sunset at **Midnight Dome Viewpoint** in Dawson.
+- **Day 3** — **Tombstone**: Grizzly Lake Trail to the first lookout, then back. Sunset at **Midnight Dome Viewpoint** in Dawson. Aurora chase that night.
 - **Day 4** — **Top of the World Highway**: Dawson → Little Gold and back.
-- **Day 5** — **Helicopter tour** to the back of Tombstone (Fireweed, landing near Talus Lake), then drive back to Whitehorse. Aurora chase in the evening.
+- **Day 5** — **Helicopter tour** to the back of Tombstone (Fireweed, landing near Talus Lake), then drive back to Whitehorse.
 
 ## Do the days in this order, on purpose
 
@@ -41,7 +41,7 @@ Two things to know:
 - **Wind at the lookout is brutal.** Bring more layers than the temperature suggests; the wind chill at the top is a different category.
 - **Weather changes fast.** The trip lives or dies on whether the sky cooperates. Plan flexibly and don't get attached to a specific day for the lookout — Tombstone really is worth it when conditions break right, but you need a clear head about it when they don't.
 
-After the trail, drive back into Dawson and head up to **Midnight Dome Viewpoint** for sunset. The light over the river and the town is the kind of payoff that makes the early drive feel small.
+After the trail, drive back into Dawson and head up to **Midnight Dome Viewpoint** for sunset. The light over the river and the town is the kind of payoff that makes the early drive feel small. Once it's dark, head back out to **chase the aurora**. Whether you see it is luck-of-the-draw in early September, but the chase itself is worth the late night.
 
 ## Day 4 — Top of the World Highway
 
@@ -55,7 +55,7 @@ This is the unlock. **Fireweed Helicopters** out of Dawson runs tours into the h
 
 If you're not a multi-day hiker, this is the way to see the inside of Tombstone. It's the most expensive single line item of the trip; budget for it from the start rather than treating it as an optional add-on.
 
-After the flight, drive back to Whitehorse. That evening, head out from town to **chase the aurora**. Whether you see it is a luck-of-the-draw question in early September — but the chase itself is the right closer either way.
+After the flight, drive back to Whitehorse for your flight out the next morning.
 
 ## Practical notes
 
