@@ -3,6 +3,7 @@ title: "A walking loop, a boat in the spray | Toronto + Niagara"
 date: 2025-07-26
 country: Canada
 city: Toronto
+coords: [43.6532, -79.3832]
 tags: [city-guide, toronto, niagara-falls, public-transit, hotels, walking-tour]
 excerpt: "Two days in Toronto and at Niagara without a rental car. The boat tour at the Falls is the only ticket worth its own day; everything else is good-enough."
 cover: ../../assets/notes/toronto-niagara-no-car-loop/cover.jpg

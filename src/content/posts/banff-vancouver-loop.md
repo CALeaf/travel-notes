@@ -3,6 +3,7 @@ title: "Snow at Lake Louise, kangaroos in Kelowna | Canadian Rockies"
 date: 2024-09-29
 country: Canada
 city: Banff
+coords: [51.1784, -115.5708]
 tags: [road-trip, banff, canadian-rockies, kelowna, calgary, hotels, snow-tires]
 excerpt: "Seven days from BC to Alberta and back, overnights in five towns, plus ten things that made the October weather bearable."
 cover: ../../assets/notes/banff-vancouver-loop/cover.jpg

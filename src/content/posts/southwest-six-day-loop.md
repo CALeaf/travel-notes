@@ -3,6 +3,7 @@ title: "From red rock to neon | American Southwest"
 date: 2026-04-30
 country: United States
 city: American Southwest
+coords: [36.9991, -112.4845]  # central pin between Zion / Bryce / Page / Vegas
 tags: [road-trip, vegas, zion, bryce-canyon, page, monument-valley, grand-canyon]
 excerpt: "Vegas, Zion, Bryce, Page, Monument Valley, and the Grand Canyon in a tight six-day loop. Where to spend your time and money — and where not to."
 cover: ../../assets/notes/southwest-six-day-loop/cover.png

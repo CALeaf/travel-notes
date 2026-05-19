@@ -1,0 +1,135 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const posts = (await getCollection('posts', ({ data }) => !data.draft))
+  .filter((p) => p.data.coords)
+  .map((p) => ({
+    slug: p.slug,
+    title: p.data.title,
+    city: p.data.city,
+    country: p.data.country,
+    date: p.data.date.toLocaleDateString('en-US', { month: 'short', year: 'numeric', timeZone: 'UTC' }),
+    coords: p.data.coords as [number, number],
+  }));
+
+const countries = new Set(posts.map((p) => p.country));
+const cities = new Set(posts.map((p) => p.city));
+---
+
+<BaseLayout
+  title="Map — She Leaves Notes"
+  description="Every trip pinned on the map."
+>
+  <section class="container-prose pt-16 md:pt-24 pb-8">
+    <p class="eyebrow mb-6">Map</p>
+    <h1 class="font-serif text-5xl md:text-6xl">Where I've been.</h1>
+    <p class="mt-4 text-muted">
+      {posts.length} {posts.length === 1 ? 'trip' : 'trips'} · {cities.size} {cities.size === 1 ? 'place' : 'places'} · {countries.size} {countries.size === 1 ? 'country' : 'countries'}. Click a pin to read.
+    </p>
+  </section>
+
+  <section class="container-prose pb-24">
+    <div id="trip-map" class="trip-map" data-posts={JSON.stringify(posts)}></div>
+  </section>
+
+  <!-- Leaflet from CDN — small, no build step, MIT-licensed -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <script
+    is:inline
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function () {
+      const el = document.getElementById('trip-map');
+      if (!el || typeof L === 'undefined') return;
+      const posts = JSON.parse(el.dataset.posts || '[]');
+
+      const map = L.map(el, { scrollWheelZoom: false }).setView([35, -90], 2);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        maxZoom: 18,
+      }).addTo(map);
+
+      const icon = L.divIcon({
+        className: 'trip-pin',
+        html: '<span></span>',
+        iconSize: [18, 18],
+        iconAnchor: [9, 9],
+      });
+
+      const group = L.featureGroup();
+      posts.forEach((p) => {
+        const m = L.marker(p.coords, { icon, title: p.city });
+        m.bindPopup(
+          '<div class="popup">' +
+            '<p class="popup-eyebrow">' + p.city + ' · ' + p.country + ' · ' + p.date + '</p>' +
+            '<a class="popup-title" href="/posts/' + p.slug + '/">' + p.title + '</a>' +
+          '</div>'
+        );
+        m.addTo(group);
+      });
+      group.addTo(map);
+
+      // Fit to all pins with padding
+      if (posts.length > 0) {
+        map.fitBounds(group.getBounds(), { padding: [40, 40], maxZoom: 5 });
+      }
+    });
+  </script>
+
+  <style is:global>
+    .trip-map {
+      width: 100%;
+      height: 70vh;
+      min-height: 480px;
+      border: 1px solid var(--color-line, #e4ddd0);
+      border-radius: 4px;
+    }
+    .trip-pin span {
+      display: block;
+      width: 18px;
+      height: 18px;
+      background: #B8826B; /* ochre */
+      border: 3px solid #FAF7F2;
+      border-radius: 9999px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    }
+    .leaflet-popup-content-wrapper {
+      border-radius: 4px;
+      background: #FAF7F2;
+    }
+    .leaflet-popup-content {
+      margin: 0.75rem 1rem;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #1A1A1A;
+    }
+    .leaflet-popup-content .popup-eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #7A6A55;
+      margin: 0 0 0.35rem 0;
+    }
+    .leaflet-popup-content .popup-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      line-height: 1.3;
+      color: #1A1A1A;
+      text-decoration: none;
+      display: block;
+    }
+    .leaflet-popup-content .popup-title:hover {
+      color: #B8826B;
+    }
+    .leaflet-control-attribution a { color: #7A6A55; }
+  </style>
+</BaseLayout>

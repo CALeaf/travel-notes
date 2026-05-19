@@ -3,6 +3,7 @@ title: "Cloudy days, impossibly blue | Cancún at Christmas"
 date: 2024-12-25
 country: Mexico
 city: Cancún
+coords: [21.1619, -86.8515]
 tags: [beach, cancun, mexico, all-inclusive, hotels, jungle-tour, xplor, snorkel]
 excerpt: "Six days at Riu Kukulkan over Christmas with the two day tours that turned the trip around — a self-drive speedboat snorkel and a full day at Xplor — viewed from the perspective of a non-swimmer who's afraid of heights."
 cover: ../../assets/notes/cancun-christmas-week/cover.jpg

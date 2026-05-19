@@ -3,6 +3,7 @@ title: "Falling for the planet, again | Yellowstone"
 date: 2025-04-30
 country: United States
 city: Yellowstone
+coords: [44.4280, -110.5885]
 tags: [road-trip, yellowstone, mammoth, lamar-valley, old-faithful, spokane, hotels]
 excerpt: "Three sunny days inside the park, three hotels worth picking carefully, and the cell-signal myth busted from a bed at Old Faithful Inn."
 cover: ../../assets/notes/yellowstone-vancouver-loop/cover.jpg

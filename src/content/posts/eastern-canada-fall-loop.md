@@ -3,6 +3,7 @@ title: "Too-green leaves, deer at the door | Eastern Canada"
 date: 2025-10-01
 country: Canada
 city: Quebec
+coords: [45.5017, -73.5673]  # Montreal — central anchor for a multi-city Quebec loop
 tags: [road-trip, quebec, montreal, parc-omega, mont-tremblant, fall-foliage, hotels]
 excerpt: "Six days across Montreal, Quebec City, Mont Tremblant, and Parc Omega. The leaves were too green, the cities were fine, and the deer cabin saved the trip."
 cover: ../../assets/notes/eastern-canada-fall-loop/cover.jpg

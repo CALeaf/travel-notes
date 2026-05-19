@@ -3,6 +3,7 @@ title: "Above the volcano, beneath the Milky Way, between the waves | Hawaii"
 date: 2026-02-13
 country: United States
 city: Big Island
+coords: [19.6400, -155.9969]  # Kailua-Kona
 tags: [honeymoon, kona, hilo, volcanoes-np, snorkeling, mauna-kea]
 excerpt: "A Kona–Hilo loop with manta rays, sea turtles, a Mauna Kea sunset, and — if you time it right — an actual eruption at Volcanoes National Park."
 cover: ../../assets/notes/hawaii-big-island-week/cover.jpg

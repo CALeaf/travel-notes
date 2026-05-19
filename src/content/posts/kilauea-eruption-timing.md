@@ -3,6 +3,7 @@ title: "Watching the tilt, waiting on Pele | Kīlauea"
 date: 2026-02-13
 country: United States
 city: Big Island
+coords: [19.4069, -155.2834]  # Kīlauea summit
 tags: [volcano-chasing, kilauea, volcanoes-np, usgs, hawaii]
 excerpt: "Most people catch a Kīlauea eruption by luck. This is the USGS data, the tilt patterns, and the booking window we used to improve the odds — and what we did when the moment came."
 cover: ../../assets/notes/kilauea-eruption-timing/cover.jpg

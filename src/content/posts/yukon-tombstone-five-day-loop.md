@@ -3,6 +3,7 @@ title: "Your own Tombstone moment | Yukon"
 date: 2025-08-30
 country: Canada
 city: Yukon
+coords: [64.0598, -139.4337]  # Dawson City
 tags: [road-trip, yukon, tombstone, dawson-city, fall-foliage, aurora, hiking, helicopter]
 excerpt: "Five days from Whitehorse to Dawson and back over Labor Day. Stack the activities low to high — hike, then drive, then helicopter — and let each day raise the bar."
 cover: ../../assets/notes/yukon-tombstone-five-day-loop/cover.jpg

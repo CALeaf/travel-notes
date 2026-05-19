@@ -12,6 +12,9 @@ const posts = defineCollection({
       excerpt: z.string().max(220),
       cover: image(),
       gallery: z.array(image()).optional(),
+      // Approximate coordinates for the trip's central location, used by /map/.
+      // [lat, lng] in decimal degrees.
+      coords: z.tuple([z.number(), z.number()]).optional(),
       draft: z.boolean().default(false),
     }),
 });
