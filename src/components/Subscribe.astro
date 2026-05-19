@@ -1,0 +1,119 @@
+---
+/**
+ * Buttondown email subscribe form.
+ *
+ * One-time setup:
+ *   1. Sign up at https://buttondown.com (free tier covers up to 1,000 subscribers).
+ *   2. Pick a Buttondown username — your subscribe URL becomes
+ *      buttondown.com/<USERNAME>.
+ *   3. Paste it into BUTTONDOWN_USERNAME below.
+ *
+ * Optional (recommended): in Buttondown settings → "RSS-to-Email", point it at
+ *   https://leavesnotes.com/rss.xml so each new post auto-sends to subscribers.
+ *
+ * Until BUTTONDOWN_USERNAME is set, the form shows a friendly placeholder
+ * instead of a broken POST destination.
+ */
+
+interface Props {
+  variant?: 'full' | 'compact';
+  heading?: string;
+  blurb?: string;
+}
+
+const {
+  variant = 'full',
+  heading = "Get new posts by email.",
+  blurb = "Occasional dispatches — one email per new trip writeup. No tracking, unsubscribe anytime.",
+} = Astro.props;
+
+const BUTTONDOWN_USERNAME = ''; // ← e.g. 'leavesnotes' (no @ sign, no URL)
+
+const isConfigured = BUTTONDOWN_USERNAME.length > 0;
+const actionUrl = `https://buttondown.com/api/emails/embed-subscribe/${BUTTONDOWN_USERNAME}`;
+const popupUrl = `https://buttondown.com/${BUTTONDOWN_USERNAME}`;
+---
+
+<section class={`subscribe-section ${variant}`}>
+  {variant === 'full' && (
+    <>
+      <h2 class="font-serif text-2xl mb-2">{heading}</h2>
+      <p class="text-sm text-muted mb-5">{blurb}</p>
+    </>
+  )}
+
+  {isConfigured ? (
+    <form
+      action={actionUrl}
+      method="post"
+      target="popupwindow"
+      onsubmit={`window.open('${popupUrl}', 'popupwindow'); return true;`}
+      class="subscribe-form"
+    >
+      <label for="bd-email" class="sr-only">Email address</label>
+      <input
+        type="email"
+        name="email"
+        id="bd-email"
+        placeholder="you@example.com"
+        required
+        class="subscribe-input"
+      />
+      <button type="submit" class="subscribe-btn">Subscribe</button>
+    </form>
+  ) : (
+    <div class="border border-line rounded p-5 text-sm text-muted">
+      <p class="mb-1"><strong class="text-ink">Email subscription not yet wired up.</strong></p>
+      <p>
+        To enable: sign up at <a class="link-underline" href="https://buttondown.com">buttondown.com</a> (free for 1,000 subscribers), pick a username, and paste it into <code class="bg-line/40 px-1 rounded">src/components/Subscribe.astro</code>.
+      </p>
+    </div>
+  )}
+</section>
+
+<style>
+  .subscribe-form {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    max-width: 480px;
+  }
+  .subscribe-input {
+    flex: 1 1 200px;
+    padding: 0.6rem 0.9rem;
+    border: 1px solid var(--color-line, #e4ddd0);
+    border-radius: 9999px;
+    background: var(--color-bg, #FAF7F2);
+    color: var(--color-ink, #1A1A1A);
+    font: inherit;
+    font-size: 0.9rem;
+    transition: border-color 0.15s;
+  }
+  .subscribe-input:focus {
+    outline: none;
+    border-color: var(--color-ochre, #B8826B);
+  }
+  .subscribe-btn {
+    padding: 0.6rem 1.25rem;
+    border: 1px solid var(--color-ink, #1A1A1A);
+    background: var(--color-ink, #1A1A1A);
+    color: var(--color-bg, #FAF7F2);
+    border-radius: 9999px;
+    font: inherit;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .subscribe-btn:hover { opacity: 0.85; }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+</style>

@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
 import xiaohei from '../assets/about/xiaohei.jpg';
+import Subscribe from '../components/Subscribe.astro';
 
 const LINKEDIN_URL = 'https://www.linkedin.com/in/xuenanwang/';
 ---
@@ -77,6 +78,10 @@ const LINKEDIN_URL = 'https://www.linkedin.com/in/xuenanwang/';
         Find me on LinkedIn
         <span aria-hidden="true">→</span>
       </a>
+    </div>
+
+    <div class="mt-16 pt-10 border-t border-line">
+      <Subscribe heading="Or, get new posts by email." />
     </div>
   </section>
 </BaseLayout>
