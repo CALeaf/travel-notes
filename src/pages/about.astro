@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import xiaohei from '../assets/about/xiaohei.jpg';
 
 const LINKEDIN_URL = 'https://www.linkedin.com/in/xuenanwang/';
 ---
@@ -13,8 +15,8 @@ const LINKEDIN_URL = 'https://www.linkedin.com/in/xuenanwang/';
 
     <div class="prose prose-lg prose-stone">
       <p>
-        (she/her/hers) — I live in the Bay Area, work in tech, and write travel
-        notes here.
+        (she/her/hers) — born and raised in Jilin, China, now in the Bay Area
+        working as a Data Scientist, writing travel notes here.
       </p>
       <p>
         Monday through Friday I'm at a screen. Weekends, I'm somewhere outside —
@@ -39,24 +41,30 @@ const LINKEDIN_URL = 'https://www.linkedin.com/in/xuenanwang/';
           I keep traveling.
         </li>
         <li>
-          <strong>Small animals are the cutest things on the planet.</strong> I
-          have a cat named <strong>Xiaohei</strong> (<em>小黑</em>, "Little
-          Black") who is non-negotiable evidence of this.
+          <strong>Animals are the cutest things on the planet.</strong> I have a
+          cat named <strong>Xiaohei</strong> (<em>小黑</em>, "Little Black"):
         </li>
+      </ul>
+
+      <figure class="not-prose my-10">
+        <Image
+          src={xiaohei}
+          alt="Xiaohei, a gray tabby cat, lying in a cat house and looking at the camera"
+          widths={[400, 800, 1200]}
+          sizes="(min-width: 1024px) 600px, 100vw"
+          class="rounded-lg w-full"
+        />
+        <figcaption class="text-center text-sm text-muted mt-3 italic font-serif">Xiaohei.</figcaption>
+      </figure>
+
+      <ul>
         <li>
           <strong>Weekends are for playing hard outdoors.</strong> Recharging
           isn't a luxury.
         </li>
       </ul>
 
-      <p>
-        If any of that resonates, I love a coffee chat — reach me on LinkedIn.
-      </p>
-
-      <p>
-        Photos here are mine unless noted. Prices shift fast — check before you
-        go.
-      </p>
+      <p>Photos here are mine unless noted.</p>
     </div>
 
     <div class="mt-12">
