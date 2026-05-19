@@ -1,45 +1,76 @@
-# Enabling email subscriptions (Buttondown)
+# Email subscriptions (Buttondown, free tier + manual send)
 
-Email subscriptions are powered by **[Buttondown](https://buttondown.com)** —
-free for up to 1,000 subscribers, no tracking, your subscriber list lives there
-(not in your repo).
+Email subscriptions go through **[Buttondown](https://buttondown.com)** on the
+free tier (up to 1,000 subscribers).
 
-Until you finish the setup below, the form on post pages and the About page
-shows a small "email subscription not yet wired up" placeholder.
+The free tier supports the form widget that lives on your post pages and
+About page, but **does not** include auto-send from RSS. So the workflow is:
 
-## One-time setup
+1. You push a new post → site redeploys (≈ 1 min).
+2. You manually compose and send one email in Buttondown that points to the
+   new post.
 
-1. **Sign up at https://buttondown.com**
-   - Pick a plan: **Free** (up to 1,000 subscribers).
-   - Pick a username. Your subscribe URL will be `buttondown.com/<username>`.
-   - Recommended username: `leavesnotes` (matches the domain). If taken, pick
-     anything you'll remember.
+Each manual send is about 2 minutes. The template below makes it copy-paste.
 
-2. **Paste the username into `src/components/Subscribe.astro`**
-   ```ts
-   const BUTTONDOWN_USERNAME = 'leavesnotes';  // <-- here
-   ```
-   Commit + push. The form goes live on the next deploy.
+---
 
-3. **(Recommended) Turn on RSS-to-Email**
-   - In Buttondown, go to **Settings → Integrations → RSS-to-Email**.
-   - Point it at `https://leavesnotes.com/rss.xml`.
-   - Choose "Send drafts" so you can review each email before it goes out
-     (otherwise it auto-sends as soon as RSS updates).
-   - Each new post you publish becomes a draft email; you click Send.
+## After-publish checklist
 
-That's it. Subscribers get a clean text email with the post title, excerpt,
-and a link back to the live page.
+Run this after every push of a new post:
 
-## What subscribers see
+- [ ] Confirm the post is live at `https://leavesnotes.com/posts/<slug>/`
+- [ ] Go to https://buttondown.com → **New email**
+- [ ] Paste the template below into the Subject + Body fields
+- [ ] Replace the four placeholders: `TITLE`, `EXCERPT`, `SLUG`, `COVER_PATH`
+- [ ] Click **Preview** to spot-check
+- [ ] Click **Send to subscribers** (or **Send to self first** if you want a test run)
 
-When someone enters their email and clicks Subscribe, a Buttondown popup
-window confirms the subscription. They then get a confirmation email asking
-them to click to verify (double opt-in, anti-spam). After that they're on the
-list.
+---
 
-## Where the form appears on the site
+## Email template (copy-paste)
 
-- Bottom of every post page (above comments).
-- About page (below the LinkedIn button).
-- Footer keeps the RSS link separately (for readers who use RSS readers).
+**Subject:**
+```
+TITLE
+```
+
+**Body (Markdown):**
+```markdown
+Hi friend,
+
+New travel note up on the site:
+
+## TITLE
+
+EXCERPT
+
+[Read the full post →](https://leavesnotes.com/posts/SLUG/)
+
+— Xuenan
+```
+
+**Where to find the placeholders:**
+
+| Placeholder | Where it comes from |
+|---|---|
+| `TITLE` | The `title:` field in the post's frontmatter |
+| `EXCERPT` | The `excerpt:` field in the post's frontmatter |
+| `SLUG` | The filename without `.md` — e.g. `eastern-canada-fall-loop` |
+| `COVER_PATH` | (Optional) drag the cover image into Buttondown's editor for an image preview |
+
+---
+
+## Tip: send to yourself first
+
+Buttondown's editor has a **"Send test email"** button. Use it the first time
+or two until you trust the template. Once you've sent 2–3 successfully, skip
+the test and go straight to publish.
+
+---
+
+## Why not auto-send?
+
+Buttondown's RSS-to-Email feature is paid ($9/month and up). For ≤ 1 post per
+week, manual send is cheaper *and* gives you a final eyes-on review before
+emails go out. If you later start publishing > 1 post per week, switching to
+Mailchimp's free RSS Campaign (or paying Buttondown $9/mo) becomes worth it.
