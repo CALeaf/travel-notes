@@ -27,7 +27,7 @@ const {
   blurb = "Occasional dispatches — one email per new trip writeup. No tracking, unsubscribe anytime.",
 } = Astro.props;
 
-const BUTTONDOWN_USERNAME = ''; // ← e.g. 'leavesnotes' (no @ sign, no URL)
+const BUTTONDOWN_USERNAME = 'leavesnotes';
 
 const isConfigured = BUTTONDOWN_USERNAME.length > 0;
 const actionUrl = `https://buttondown.com/api/emails/embed-subscribe/${BUTTONDOWN_USERNAME}`;
