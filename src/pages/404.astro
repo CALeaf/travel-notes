@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SearchBox from '../components/SearchBox.astro';
+---
+
+<BaseLayout title="Lost in transit — She Leaves Notes" description="That page wandered off. Try searching, or head back home.">
+  <section class="container-narrow pt-24 md:pt-32 pb-24 text-center">
+    <p class="eyebrow mb-6">404 · page not found</p>
+    <h1 class="font-serif text-5xl md:text-7xl leading-[1.05] tracking-tight mb-8">
+      <span class="italic">Lost</span> in transit.
+    </h1>
+    <p class="text-lg text-muted leading-relaxed max-w-xl mx-auto mb-10">
+      The page you're looking for isn't here — maybe it was renamed, maybe it never
+      existed. Try a search, or head back to the main feed.
+    </p>
+
+    <div class="max-w-xl mx-auto mb-10">
+      <SearchBox />
+    </div>
+
+    <div class="flex items-center justify-center gap-6 text-sm">
+      <a href="/" class="link-underline">← Back to home</a>
+      <a href="/about/" class="link-underline">About</a>
+    </div>
+  </section>
+</BaseLayout>

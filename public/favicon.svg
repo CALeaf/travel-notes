@@ -1,4 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#FAF7F2"/>
-  <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#1A1A1A">F</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#FAF7F2"/>
+  <!-- Leaf body: stylized teardrop in 莫兰迪绿 -->
+  <path d="M12 52 C 12 28, 28 12, 52 12 C 52 36, 36 52, 12 52 Z" fill="#7A8B7F"/>
+  <!-- Central vein -->
+  <path d="M12 52 L 52 12" stroke="#FAF7F2" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Side veins -->
+  <path d="M22 42 L 30 38 M30 30 L 38 26 M38 22 L 44 20" stroke="#FAF7F2" stroke-width="1.5" stroke-linecap="round" opacity="0.6" fill="none"/>
 </svg>
