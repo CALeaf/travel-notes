@@ -7,7 +7,6 @@ tags: [road-trip, quebec, montreal, parc-omega, mont-tremblant, fall-foliage, ho
 excerpt: "Six days across Montreal, Quebec City, Mont Tremblant, and Parc Omega. The leaves were too green, the cities were fine, and the deer cabin saved the trip."
 cover: ../../assets/notes/eastern-canada-fall-loop/cover.jpg
 gallery:
-  - ../../assets/notes/eastern-canada-fall-loop/01-terrasse-sunset.jpg
   - ../../assets/notes/eastern-canada-fall-loop/04-tremblant-lake.jpg
   - ../../assets/notes/eastern-canada-fall-loop/02-tremblant-red.jpg
   - ../../assets/notes/eastern-canada-fall-loop/03-tremblant-aerial.jpg

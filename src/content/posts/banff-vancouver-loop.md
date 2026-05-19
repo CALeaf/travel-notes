@@ -13,7 +13,6 @@ gallery:
   - ../../assets/notes/banff-vancouver-loop/04-moraine.jpg
   - ../../assets/notes/banff-vancouver-loop/01-kangaroo.jpg
   - ../../assets/notes/banff-vancouver-loop/05-highway-aspens.jpg
-  - ../../assets/notes/banff-vancouver-loop/06-sulphur-golden.jpg
   - ../../assets/notes/banff-vancouver-loop/07-sulphur-dusk.jpg
   - ../../assets/notes/banff-vancouver-loop/08-peyto.jpg
 ---
