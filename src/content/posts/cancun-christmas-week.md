@@ -45,8 +45,6 @@ We tipped him **USD $50** at the end. Looking at other trip reports later that d
 
 **Booking**: directly on the **Aquaworld** site. The tour was **~USD $88 for two**, plus a **$40 deck fee for two**, plus tip. The dockside photo package — which includes a drone shot — was an additional ~$50; I really wanted it, couldn't negotiate, didn't buy. Small regret.
 
-If your eyes don't tear up underwater, bring a waterproof phone case. Mine were too overwhelmed to use one even if we'd had it.
-
 ### Xplor — the park
 
 Xplor is a one-day adventure park about 90 minutes south of Cancún. We booked through **Vistor** (day pass + hotel-zone transfer, MXN ~7,970 ≈ **USD $420 for two**). The transfer-included slots sell out — book **at least 2–3 days ahead**.
