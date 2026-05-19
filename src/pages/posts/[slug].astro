@@ -4,6 +4,7 @@ import { Image, getImage } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
 import Gallery from '../../components/Gallery.astro';
+import Comments from '../../components/Comments.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => !data.draft);
@@ -94,6 +95,11 @@ const more = all
       )
     }
   </article>
+
+  <!-- Comments -->
+  <section class="container-narrow mt-24 pt-12 border-t border-line">
+    <Comments />
+  </section>
 
   <!-- More from this city -->
   {

@@ -1,0 +1,60 @@
+---
+/**
+ * Giscus comments — uses GitHub Discussions on CALeaf/travel-notes.
+ *
+ * One-time setup required (instructions in README/COMMENTS-SETUP.md):
+ *   1. Enable Discussions on the GitHub repo (Settings → General → Features → Discussions).
+ *   2. Install the giscus GitHub App on the repo: https://github.com/apps/giscus
+ *   3. Visit https://giscus.app, plug in the repo, pick the "General" discussion
+ *      category, and copy the `data-repo-id` and `data-category-id` values from
+ *      the generated <script>. Paste them into the constants below.
+ *
+ * Until repo-id and category-id are filled in, the widget will show a friendly
+ * placeholder instead of a broken iframe.
+ */
+
+const GISCUS_REPO = 'CALeaf/travel-notes';
+const GISCUS_REPO_ID = '';        // ← paste from giscus.app
+const GISCUS_CATEGORY = 'General';
+const GISCUS_CATEGORY_ID = '';    // ← paste from giscus.app
+
+const isConfigured = GISCUS_REPO_ID && GISCUS_CATEGORY_ID;
+---
+
+<section class="comments-section">
+  <h2 class="font-serif text-2xl mb-2">Comments</h2>
+  <p class="text-sm text-muted mb-6">
+    Comments are powered by GitHub Discussions. You'll need a GitHub account to post.
+  </p>
+
+  {isConfigured ? (
+    <script
+      is:inline
+      src="https://giscus.app/client.js"
+      data-repo={GISCUS_REPO}
+      data-repo-id={GISCUS_REPO_ID}
+      data-category={GISCUS_CATEGORY}
+      data-category-id={GISCUS_CATEGORY_ID}
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="light"
+      data-lang="en"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async
+    />
+  ) : (
+    <div class="border border-line rounded p-6 text-sm text-muted">
+      <p class="mb-2"><strong class="text-ink">Comments not yet wired up.</strong></p>
+      <p>
+        To enable: install the <a class="link-underline" href="https://github.com/apps/giscus">giscus GitHub App</a>,
+        configure at <a class="link-underline" href="https://giscus.app">giscus.app</a>,
+        and paste the resulting repo-id + category-id into
+        <code class="bg-line/40 px-1 rounded">src/components/Comments.astro</code>.
+      </p>
+    </div>
+  )}
+</section>
