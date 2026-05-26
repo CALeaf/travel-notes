@@ -11,7 +11,7 @@ gallery:
   - ../../assets/notes/yukon-tombstone-five-day-loop/06-helicopter.jpg
   - ../../assets/notes/yukon-tombstone-five-day-loop/01-spires-dempster.jpg
   - ../../assets/notes/yukon-tombstone-five-day-loop/04-valley-wide.jpg
-  - ../../assets/notes/yukon-tombstone-five-day-loop/05-range-overcast.jpg
+  - ../../assets/notes/yukon-tombstone-five-day-loop/08-tombstone-sunny.jpg
   - ../../assets/notes/yukon-tombstone-five-day-loop/03-spires-close.jpg
   - ../../assets/notes/yukon-tombstone-five-day-loop/07-two-spires.jpg
   - ../../assets/notes/yukon-tombstone-five-day-loop/02-tundra-yellow.jpg
