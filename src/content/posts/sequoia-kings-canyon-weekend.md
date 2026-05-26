@@ -1,5 +1,5 @@
 ---
-title: "Do Kings Canyon first | Sequoia & Kings Canyon"
+title: "Staggering giants | Sequoia & Kings Canyon"
 date: 2026-05-16
 country: United States
 city: Sequoia & Kings Canyon
