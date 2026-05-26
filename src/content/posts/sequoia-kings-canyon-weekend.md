@@ -7,6 +7,14 @@ coords: [36.5858, -118.7677]
 tags: [national-parks, sequoia, kings-canyon, california, weekend-trip, road-trip, hotels]
 excerpt: "A two-day, one-night loop from the Bay Area through Kings Canyon and Sequoia. The one piece of structural advice: do Kings Canyon first."
 cover: ../../assets/notes/sequoia-kings-canyon-weekend/cover.jpg
+gallery:
+  - ../../assets/notes/sequoia-kings-canyon-weekend/01-kings-canyon-overlook.jpg
+  - ../../assets/notes/sequoia-kings-canyon-weekend/02-grizzly-falls.jpg
+  - ../../assets/notes/sequoia-kings-canyon-weekend/03-canyon-river.jpg
+  - ../../assets/notes/sequoia-kings-canyon-weekend/04-zumwalt-meadow.jpg
+  - ../../assets/notes/sequoia-kings-canyon-weekend/05-bird.jpg
+  - ../../assets/notes/sequoia-kings-canyon-weekend/06-scarred-sequoia.jpg
+  - ../../assets/notes/sequoia-kings-canyon-weekend/07-parker-group.jpg
 ---
 
 A weekend out of the Bay Area is enough for both Sequoia and Kings Canyon if you don't try to do anything fancy with it. No early-morning departure, no in-park lodge booked six months out, no second night. Two days, one night, one structural decision to get right: **do Kings Canyon first, then Sequoia**. Reverse the order and Kings Canyon will feel like a letdown.
