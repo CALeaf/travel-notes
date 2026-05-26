@@ -6,10 +6,10 @@ city: American Southwest
 coords: [36.9991, -112.4845]  # central pin between Zion / Bryce / Page / Vegas
 tags: [road-trip, vegas, zion, bryce-canyon, page, monument-valley, grand-canyon]
 excerpt: "Vegas, Zion, Bryce, Page, Monument Valley, and the Grand Canyon in a tight six-day loop. Where to spend your time and money — and where not to."
-cover: ../../assets/notes/southwest-six-day-loop/cover.png
+cover: ../../assets/notes/southwest-six-day-loop/cover.jpg
 gallery:
+  - ../../assets/notes/southwest-six-day-loop/route-map.png
   - ../../assets/notes/southwest-six-day-loop/zion.jpg
-  - ../../assets/notes/southwest-six-day-loop/bryce.jpg
   - ../../assets/notes/southwest-six-day-loop/page.jpg
   - ../../assets/notes/southwest-six-day-loop/monument-valley.jpg
   - ../../assets/notes/southwest-six-day-loop/vegas.jpg
