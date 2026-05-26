@@ -14,7 +14,7 @@ gallery:
   - ../../assets/notes/sequoia-kings-canyon-weekend/04-zumwalt-meadow.jpg
   - ../../assets/notes/sequoia-kings-canyon-weekend/05-bird.jpg
   - ../../assets/notes/sequoia-kings-canyon-weekend/06-scarred-sequoia.jpg
-  - ../../assets/notes/sequoia-kings-canyon-weekend/07-parker-group.jpg
+  - ../../assets/notes/sequoia-kings-canyon-weekend/08-moro-rock.jpg
 ---
 
 A weekend out of the Bay Area is enough for both Sequoia and Kings Canyon if you don't try to do anything fancy with it. No early-morning departure, no in-park lodge booked six months out, no second night. Two days, one night, one structural decision to get right: **do Kings Canyon first, then Sequoia**. Reverse the order and Kings Canyon will feel like a letdown.
