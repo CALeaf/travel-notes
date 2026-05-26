@@ -1,6 +1,6 @@
 ---
 title: "Do Kings Canyon first | Sequoia & Kings Canyon"
-date: 2026-05-15
+date: 2026-05-16
 country: United States
 city: Sequoia & Kings Canyon
 coords: [36.5858, -118.7677]
